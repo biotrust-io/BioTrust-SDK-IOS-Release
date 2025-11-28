@@ -1,0 +1,8 @@
+framework module BiometricFaceValidator {
+  umbrella header "BiometricFaceValidator.h"
+  
+  export *
+  module * { export * }
+  
+  link framework "OpenSSL"
+}

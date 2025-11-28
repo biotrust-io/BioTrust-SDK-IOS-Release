@@ -1,0 +1,13 @@
+framework module BiometricFaceValidator {
+  umbrella header "BiometricFaceValidator.h"
+  
+  export *
+  module * { export * }
+  
+  link framework "OpenSSL"
+}
+
+module BiometricFaceValidator.Swift {
+  header "BiometricFaceValidator-Swift.h"
+  requires objc
+}

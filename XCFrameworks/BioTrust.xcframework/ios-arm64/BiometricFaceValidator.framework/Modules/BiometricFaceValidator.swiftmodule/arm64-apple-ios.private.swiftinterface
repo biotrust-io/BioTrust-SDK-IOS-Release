@@ -1,0 +1,415 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios17.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name BiometricFaceValidator
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import ARKit
+import AVFoundation
+import AudioToolbox
+@_exported import BiometricFaceValidator
+import FingerprintPro
+import Foundation
+import Security
+import Swift
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum DocumentValidationError : Swift.Error {
+  case invalidResponse
+  case unexpectedStatus(code: Swift.Int, message: Swift.String)
+  case decodingError
+  case timeout
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public class FacialResposta : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class FacialBiometrics : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class DocumentValidationResult : Swift.Codable {
+  public func getSimilarityPercentage() -> Swift.Float
+  public func getFullName() -> Swift.String?
+  public func getCpf() -> Swift.String?
+  public func getBirthDate() -> Swift.String?
+  public func getProbability() -> Swift.String?
+  public func getIsAvailable() -> Swift.Bool
+  public func getMessage() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public struct FaceBox {
+  public let confidence: Swift.Float
+  public let x1: Swift.Float
+  public let y1: Swift.Float
+  public let x2: Swift.Float
+  public let y2: Swift.Float
+  public init(confidence: Swift.Float, x1: Swift.Float, y1: Swift.Float, x2: Swift.Float, y2: Swift.Float)
+  public var rect: CoreFoundation.CGRect {
+    get
+  }
+}
+public struct ModelConfig {
+  public let scale: Swift.Float
+  public let shiftX: Swift.Float
+  public let shiftY: Swift.Float
+  public let height: Swift.Int32
+  public let width: Swift.Int32
+  public let name: Swift.String
+  public let orgResize: Swift.Bool
+  public init(scale: Swift.Float, shiftX: Swift.Float, shiftY: Swift.Float, height: Swift.Int32, width: Swift.Int32, name: Swift.String, orgResize: Swift.Bool)
+}
+public class FaceDetector {
+  public init()
+  public func setMinFaceSize(_ size: Swift.Int32)
+  public func loadModel() -> Swift.Bool
+  public func detectFaces(in image: UIKit.UIImage, maxFaces: Swift.Int = 10) -> [BiometricFaceValidator.FaceBox]
+  @objc deinit
+}
+public class LivenessDetector {
+  public init()
+  public func loadModels() -> Swift.Bool
+  public func detectLiveness(in image: UIKit.UIImage, faceBox: inout BiometricFaceValidator.FaceBox) -> Swift.Float
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AuthService {
+  public var validationMode: BiometricFaceValidator.ValidationMode
+  public var documentInfo: BiometricFaceValidator.DocumentInfo?
+  public var uuid: Swift.String?
+  public var apiUrl: Swift.String?
+  public func GetAccessToken() async -> (Swift.String, Swift.Bool)
+  @objc deinit
+}
+public struct DocumentInfo {
+  public var cpf: Swift.String
+  public var birthDate: Foundation.Date
+  public init(cpf: Swift.String, birthDate: Foundation.Date)
+  public func isValid() -> Swift.Bool
+  public func getFormattedBirthDate() -> Swift.String
+}
+@_inheritsConvenienceInitializers @objc public class DeviceInfoHelper : ObjectiveC.NSObject {
+  @objc public static let operatingSystem: Swift.String
+  @objc public static func getSDKVersion() -> Swift.String
+  @objc public static func getSDKVersionInfo() -> BiometricFaceValidator.SDKVersionInfo
+  @objc public static func getDeviceID() -> Swift.String
+  @objc public static func regenerateDeviceID() -> Swift.String
+  @objc public static func getSystemVersion() -> Swift.String
+  @objc public static func getDeviceModel() -> Swift.String
+  @objc public static func getDeviceName() -> Swift.String
+  @objc public static func getDeviceInfo() -> BiometricFaceValidator.DeviceInfo
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class SDKVersionInfo : ObjectiveC.NSObject {
+  @objc final public let version: Swift.String
+  @objc final public let buildNumber: Swift.String
+  @objc final public let bundleIdentifier: Swift.String
+  @objc final public let bundleName: Swift.String
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc public func fullVersion() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DeviceInfo : ObjectiveC.NSObject {
+  @objc final public let deviceID: Swift.String
+  @objc final public let sdkVersion: Swift.String
+  @objc final public let operatingSystem: Swift.String
+  @objc final public let systemVersion: Swift.String
+  @objc final public let deviceModel: Swift.String
+  @objc final public let deviceName: Swift.String
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc public func toDictionary() -> [Swift.String : Swift.String]
+  @objc deinit
+}
+extension BiometricFaceValidator.DeviceInfoHelper {
+  @objc public static func printDeviceInfo()
+  @objc public static func isDeviceIDSaved() -> Swift.Bool
+  @objc public static func getCurrentIdentifierForVendor() -> Swift.String?
+}
+public class RegisterResponse : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class UpdateResponse : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum DocumentType : Swift.String, Swift.Codable {
+  case cpf
+  case rg
+  case cnh
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class FaceMatchService {
+  public func registerPerson(name: Swift.String, document: Swift.String, documentType: BiometricFaceValidator.DocumentType, image: UIKit.UIImage, token: Swift.String) async throws -> BiometricFaceValidator.RegisterResponse
+  public func updatePerson(uniqueId: Swift.String, name: Swift.String, document: Swift.String, image: UIKit.UIImage, token: Swift.String) async throws -> BiometricFaceValidator.UpdateResponse
+  @objc deinit
+}
+public class FaceMatchResponse : Swift.Codable {
+  final public let faceMatchResult: BiometricFaceValidator.FaceMatchResult?
+  final public let transaction: BiometricFaceValidator.Transaction
+  public init(faceMatchResult: BiometricFaceValidator.FaceMatchResult?, transaction: BiometricFaceValidator.Transaction)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class FaceMatchResult : Swift.Codable {
+  final public let match: Swift.Bool
+  final public let uniqueID: Swift.String
+  final public let document: Swift.String?
+  final public let fullName: Swift.String?
+  final public let similarity: Swift.Double
+  public init(match: Swift.Bool, uniqueID: Swift.String, document: Swift.String?, fullName: Swift.String?, similarity: Swift.Double)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class Transaction : Swift.Codable {
+  final public let code: Swift.Int
+  final public let message: Swift.String?
+  final public let isSuccess: Swift.Bool
+  public init(code: Swift.Int, message: Swift.String?, isSuccess: Swift.Bool)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class RegisterResult {
+  public init(isSuccess: Swift.Bool, message: Swift.String, uniqueId: Swift.String?, faceImage: UIKit.UIImage?, livenessConfidence: Swift.Float)
+  public func getIsSuccess() -> Swift.Bool
+  public func getMessage() -> Swift.String
+  public func getUniqueId() -> Swift.String?
+  public func getFaceImage() -> UIKit.UIImage?
+  public func getLivenessConfidence() -> Swift.Float
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FaceMatchConfig {
+  public class Builder {
+    public init()
+    public func setUuid(_ uuid: Swift.String?) -> BiometricFaceValidator.FaceMatchConfig.Builder
+    public func setApiUrl(_ apiUrl: Swift.String) -> BiometricFaceValidator.FaceMatchConfig.Builder
+    public func setLocale(_ locale: Swift.String?) -> BiometricFaceValidator.FaceMatchConfig.Builder
+    public func setThemeMode(_ theme: Swift.String?) -> BiometricFaceValidator.FaceMatchConfig.Builder
+    public func setCornerImage(_ image: UIKit.UIImage?) -> BiometricFaceValidator.FaceMatchConfig.Builder
+    public func setCornerImagePosition(_ position: BiometricFaceValidator.BrandPosition) -> BiometricFaceValidator.FaceMatchConfig.Builder
+    public func setEnableSoundFeedback(_ enable: Swift.Bool) -> BiometricFaceValidator.FaceMatchConfig.Builder
+    public func setEnableHapticFeedback(_ enable: Swift.Bool) -> BiometricFaceValidator.FaceMatchConfig.Builder
+    public func build() throws -> BiometricFaceValidator.FaceMatchConfig
+    @objc deinit
+  }
+  @objc deinit
+}
+@inlinable public func devPrint(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n") {
+}
+@_hasMissingDesignatedInitializers public class BiometricValidatorService {
+  public var validationMode: BiometricFaceValidator.ValidationMode
+  public var apiUrl: Swift.String
+  public var accessToken: Swift.String
+  public func BiometricValidation(face: UIKit.UIImage) async throws -> (Swift.Bool, BiometricFaceValidator.DocumentValidationResult?, BiometricFaceValidator.FaceMatchResponse?)
+  @objc deinit
+}
+extension BiometricFaceValidator.BiometricValidationLauncher.ValidationResultCallback {
+  public func onDocumentValidationComplete(result: BiometricFaceValidator.ValidationResult)
+  public func onFaceMatchComplete(result: BiometricFaceValidator.ValidationResult)
+}
+public class BiometricValidationLauncher {
+  public protocol ValidationResultCallback {
+    func onValidationSuccess(message: Swift.String, livenessConfidence: Swift.Float, faceImage: UIKit.UIImage?)
+    func onValidationFailed(errorMessage: Swift.String)
+    func onValidationError(errorMessage: Swift.String)
+    func onDocumentValidationComplete(result: BiometricFaceValidator.ValidationResult)
+    func onFaceMatchComplete(result: BiometricFaceValidator.ValidationResult)
+  }
+  public var callback: (any BiometricFaceValidator.BiometricValidationLauncher.ValidationResultCallback)?
+  public var localeString: Swift.String?
+  public var themeModeString: Swift.String?
+  public var validationMode: BiometricFaceValidator.ValidationMode
+  public var documentInfo: BiometricFaceValidator.DocumentInfo?
+  public var uuid: Swift.String?
+  public var apiUrl: Swift.String?
+  public var cornerImage: UIKit.UIImage?
+  public var cornerImagePosition: BiometricFaceValidator.BrandPosition
+  public init(viewController: UIKit.UIViewController, callback: any BiometricFaceValidator.BiometricValidationLauncher.ValidationResultCallback, config: BiometricFaceValidator.FaceBiometricConfig)
+  public func launch(from viewController: UIKit.UIViewController)
+  public func setCallback(_ callback: any BiometricFaceValidator.BiometricValidationLauncher.ValidationResultCallback)
+  public func setLocale(_ localeString: Swift.String)
+  public func getLocale() -> Swift.String?
+  public func setThemeMode(_ themeModeString: Swift.String)
+  public func getThemeMode() -> Swift.String?
+  public func setValidationMode(_ mode: BiometricFaceValidator.ValidationMode)
+  public func getValidationMode() -> BiometricFaceValidator.ValidationMode
+  public func setDocumentInfo(_ documentInfo: BiometricFaceValidator.DocumentInfo)
+  public func getDocumentInfo() -> BiometricFaceValidator.DocumentInfo?
+  public func setUuid(_ uuid: Swift.String)
+  public func getUuid() -> Swift.String?
+  public func setAPIUrl(_ apiUrl: Swift.String)
+  public func getAPIUrl() -> Swift.String?
+  public func setCornerImage(_ image: UIKit.UIImage?)
+  public func getCornerImage() -> UIKit.UIImage?
+  public func setCornerImagePosition(_ position: BiometricFaceValidator.BrandPosition)
+  public func getCornerImagePosition() -> BiometricFaceValidator.BrandPosition
+  public func handleResult(resultCode: Swift.Int, data: [Swift.String : Any]?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FingerprintService {
+  public static let shared: BiometricFaceValidator.FingerprintService
+  public func initialize()
+  public func getFingerprint() async -> (visitorId: Swift.String, requestId: Swift.String)
+  public func clearCache()
+  @objc deinit
+}
+
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BioTrustManager : ObjectiveC.NSObject {
+  @objc public static let shared: BiometricFaceValidator.BioTrustManager
+  @objc public func initialize()
+  @objc public func cleanup()
+  @objc public func encrypt(_ plaintext: Swift.String) -> Swift.String?
+  @objc public func decrypt(_ ciphertext: Swift.String) -> Swift.String?
+  @objc public func generateAuthPayload(packageName: Swift.String, uuid: Swift.String, validationType: Swift.String, document: Swift.String = "", dob: Swift.String = "", ipAddress: Swift.String, requestId: Swift.String = "", deviceId: Swift.String = "") -> Swift.String?
+  @objc public func generateAuthPayload(packageName: Swift.String, uuid: Swift.String, validationType: Swift.String, document: Swift.String, dob: Swift.String, deviceID: Swift.String, sdkVersion: Swift.String, so: Swift.String, soVersion: Swift.String, ipAddress: Swift.String, requestId: Swift.String) -> Swift.String?
+  @objc deinit
+}
+@objc public class BioTrustAuthData : ObjectiveC.NSObject {
+  @objc final public let packageName: Swift.String
+  @objc final public let uuid: Swift.String
+  @objc final public let validationType: Swift.String
+  @objc final public let document: Swift.String
+  @objc final public let dob: Swift.String
+  @objc final public let deviceID: Swift.String
+  @objc final public let sdkVersion: Swift.String
+  @objc final public let so: Swift.String
+  @objc final public let soVersion: Swift.String
+  @objc final public let ipAddress: Swift.String
+  @objc final public let requestId: Swift.String
+  @objc public init(packageName: Swift.String, uuid: Swift.String, validationType: Swift.String, document: Swift.String = "", dob: Swift.String = "", ipAddress: Swift.String, requestId: Swift.String = "", deviceId: Swift.String = "")
+  @objc public init(packageName: Swift.String, uuid: Swift.String, validationType: Swift.String, document: Swift.String, dob: Swift.String, deviceID: Swift.String, sdkVersion: Swift.String, so: Swift.String, soVersion: Swift.String, ipAddress: Swift.String, requestId: Swift.String)
+  @objc deinit
+}
+extension BiometricFaceValidator.BioTrustManager {
+  @objc dynamic public func generateAuthPayload(with authData: BiometricFaceValidator.BioTrustAuthData) -> Swift.String?
+  @objc dynamic public func getDeviceInfo() -> BiometricFaceValidator.DeviceInfo
+}
+@_hasMissingDesignatedInitializers public class ValidationResult {
+  public func getIsSuccess() -> Swift.Bool
+  public func getMessage() -> Swift.String
+  public func getFaceImage() -> UIKit.UIImage?
+  public func getDocumentResult() -> BiometricFaceValidator.DocumentValidationResult?
+  public func hasDocumentValidation() -> Swift.Bool
+  public func getLivenessConfidence() -> Swift.Float
+  public func getMatchedPersonId() -> Swift.String?
+  public func getMatchConfidence() -> Swift.Double?
+  public func getPersonName() -> Swift.String?
+  public func getPersonDocument() -> Swift.String?
+  public func getMatch() -> Swift.Bool?
+  @objc deinit
+}
+public protocol ValidationCallback : AnyObject {
+  func onWaitingForFace()
+  func onPositioningFace()
+  func onChallengeRequested(challenge: BiometricFaceValidator.Challenge)
+  func onChallengePassed(challenge: BiometricFaceValidator.Challenge)
+  func onWaitingForFinalCapture()
+  func onWaitingForOpenEyes()
+  func onFaceCaptured(faceBitmap: UIKit.UIImage?)
+  func onFaceNotDetected()
+  func onMultipleFacesDetected()
+  func onFaceOutsideOval()
+  func onDocumentValidating()
+  func onDocumentValidationComplete(result: BiometricFaceValidator.ValidationResult)
+  func onFaceMatchValidationComplete(result: BiometricFaceValidator.ValidationResult)
+  func onValidationComplete(isValid: Swift.Bool, livenessConfidence: Swift.Float, message: Swift.String, faceBitmap: UIKit.UIImage?)
+  func onError(errorMessage: Swift.String)
+  func onFaceNeedsCentering()
+  func onFaceNeedsToBeCloser()
+  func onFaceNeedsEyesOpen()
+  func onFaceNeedsToStraighten()
+  func onReturnToCenter()
+  func onProcessingValidation()
+}
+public enum ValidationMode : Swift.Equatable {
+  case livenessOnly
+  case livenessWithDocument
+  case faceMatch(requireChallenges: Swift.Bool)
+  case faceMatchExact(documentNumber: Swift.String, requireChallenges: Swift.Bool)
+  case faceCapture
+  public static func == (a: BiometricFaceValidator.ValidationMode, b: BiometricFaceValidator.ValidationMode) -> Swift.Bool
+}
+public enum BrandPosition : Swift.String, Swift.CaseIterable {
+  case bottomLeft
+  case bottomRight
+  case topLeft
+  case topRight
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [BiometricFaceValidator.BrandPosition]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [BiometricFaceValidator.BrandPosition] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class FaceBiometricConfig {
+  public class Builder {
+    public init()
+    public func setChallengeCount(_ count: Swift.Int) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setRequireAllChallenges(_ required: Swift.Bool) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setEnableSoundFeedback(_ enable: Swift.Bool) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setEnableHapticFeedback(_ enable: Swift.Bool) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setTimeout(_ millis: Swift.Int) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setUuid(_ uuid: Swift.String?) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setApiUrl(_ apiUrl: Swift.String?) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setValidationMode(_ mode: BiometricFaceValidator.ValidationMode) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setDocumentInfo(_ info: BiometricFaceValidator.DocumentInfo?) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setLocale(_ locale: Swift.String?) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setThemeMode(_ theme: Swift.String?) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setCornerImage(_ image: UIKit.UIImage?) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setCornerImagePosition(_ position: BiometricFaceValidator.BrandPosition) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func build() throws -> BiometricFaceValidator.FaceBiometricConfig
+    @objc deinit
+  }
+  @objc deinit
+}
+public class Challenge {
+  public static let TYPE_MOVE_CLOSER: Swift.Int
+  public static let TYPE_MOVE_BACK: Swift.Int
+  public static let TYPE_TURN_LEFT: Swift.Int
+  public static let TYPE_TURN_RIGHT: Swift.Int
+  public static let TYPE_BLINK: Swift.Int
+  public static let TYPE_TURN_UP: Swift.Int
+  public static let TYPE_TURN_DOWN: Swift.Int
+  public init(type: Swift.Int, instructionText: Swift.String)
+  public func getType() -> Swift.Int
+  public func getInstructionText() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BiometricFaceValidatorFramework {
+  public static func initializeFramework()
+  public static func isFrameworkConfigured() -> Swift.Bool
+  @objc deinit
+}
+extension BiometricFaceValidator.DocumentType : Swift.Equatable {}
+extension BiometricFaceValidator.DocumentType : Swift.Hashable {}
+extension BiometricFaceValidator.DocumentType : Swift.RawRepresentable {}
+extension BiometricFaceValidator.BrandPosition : Swift.Equatable {}
+extension BiometricFaceValidator.BrandPosition : Swift.Hashable {}
+extension BiometricFaceValidator.BrandPosition : Swift.RawRepresentable {}
