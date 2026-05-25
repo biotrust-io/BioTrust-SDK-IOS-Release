@@ -6437,7 +6437,7 @@
           {
             "kind": "Function",
             "name": "BiometricValidation",
-            "printedName": "BiometricValidation(face:)",
+            "printedName": "BiometricValidation(face:livenessConfidence:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6485,11 +6485,17 @@
                 "name": "UIImage",
                 "printedName": "UIKit.UIImage",
                 "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
               }
             ],
             "declKind": "Func",
-            "usr": "s:22BiometricFaceValidator0aC7ServiceC0A10Validation4faceSb_AA08DocumentE6ResultCSgAA0B13MatchResponseCSgtSo7UIImageC_tYaKF",
-            "mangledName": "$s22BiometricFaceValidator0aC7ServiceC0A10Validation4faceSb_AA08DocumentE6ResultCSgAA0B13MatchResponseCSgtSo7UIImageC_tYaKF",
+            "usr": "s:22BiometricFaceValidator0aC7ServiceC0A10Validation4face18livenessConfidenceSb_AA08DocumentE6ResultCSgAA0B13MatchResponseCSgtSo7UIImageC_SftYaKF",
+            "mangledName": "$s22BiometricFaceValidator0aC7ServiceC0A10Validation4face18livenessConfidenceSb_AA08DocumentE6ResultCSgAA0B13MatchResponseCSgtSo7UIImageC_SftYaKF",
             "moduleName": "BiometricFaceValidator",
             "declAttributes": [
               "AccessControl"

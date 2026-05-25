@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "biotrust-sdk-ios-release",
+          "kind" : "root",
+          "location" : "/Volumes/Production/Development/BioTrust/BioTrust-SDK-IOS-Release",
+          "name" : "BioTrust-SDK-IOS-Release"
+        },
+        "path" : "/Volumes/Production/Development/BioTrust/BioTrust-SDK-IOS-Release/XCFrameworks/BioTrust.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "BioTrust"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}

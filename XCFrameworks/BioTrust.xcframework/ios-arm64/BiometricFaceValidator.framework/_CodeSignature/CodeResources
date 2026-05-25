@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		271B56vqM/qIpZhZ5iEJEBKOx+U=
+		b2g35abHx8CBOzeyqH8jdpNRP4I=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ck/8Vu/m5WC2I849zKXNw3BGe6E=
+		yQ++TPzzIuCjgVBt2eLS7CkaV0k=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ck/8Vu/m5WC2I849zKXNw3BGe6E=
+		yQ++TPzzIuCjgVBt2eLS7CkaV0k=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		s+3ecpNUn53g5zrKBBf82M9HkOA=
+		3cGYhwYIcbL7yaS2+SYG7j44/e8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -146,14 +146,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F6t4KOjFssbbcYtT5HjwuZOizOZKvCYElkatm7tYXw8=
+			1XLUUIaRpl+ChUn57+j0TCZ1Bvs40Du3hBM2L5Ni6Xs=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HwPT0mF/mUHkx4PiBWVN72ronum0Isqdprxl9Ll6TYk=
+			E3/HrGAsH50RqO/PFYoWHymJ/zHHf13/daH2TFyiuQA=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -167,14 +167,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HwPT0mF/mUHkx4PiBWVN72ronum0Isqdprxl9Ll6TYk=
+			E3/HrGAsH50RqO/PFYoWHymJ/zHHf13/daH2TFyiuQA=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dBJ+FfYHMOF/prRbWo0i/TI2/fKjdqlvv81yOSPOK3U=
+			nki7WMfkW4icRZjIOs0d2y3Zn3Iwdc2DXRzh6HKLJIg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

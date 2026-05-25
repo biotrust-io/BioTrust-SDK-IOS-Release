@@ -221,7 +221,7 @@ public class RegisterResult {
   public var validationMode: BiometricFaceValidator.ValidationMode
   public var apiUrl: Swift.String
   public var accessToken: Swift.String
-  public func BiometricValidation(face: UIKit.UIImage) async throws -> (Swift.Bool, BiometricFaceValidator.DocumentValidationResult?, BiometricFaceValidator.FaceMatchResponse?)
+  public func BiometricValidation(face: UIKit.UIImage, livenessConfidence: Swift.Float) async throws -> (Swift.Bool, BiometricFaceValidator.DocumentValidationResult?, BiometricFaceValidator.FaceMatchResponse?)
   @objc deinit
 }
 extension BiometricFaceValidator.BiometricValidationLauncher.ValidationResultCallback {
