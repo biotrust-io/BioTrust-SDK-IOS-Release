@@ -6,6 +6,7 @@ import ARKit
 import AVFoundation
 import AudioToolbox
 @_exported import BiometricFaceValidator
+import CommonCrypto
 import FingerprintPro
 import Foundation
 import Security
@@ -80,12 +81,17 @@ public class LivenessDetector {
   public func detectLiveness(in image: UIKit.UIImage, faceBox: inout BiometricFaceValidator.FaceBox) -> Swift.Float
   @objc deinit
 }
+public struct BioTrustSession : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers public class AuthService {
   public var validationMode: BiometricFaceValidator.ValidationMode
   public var documentInfo: BiometricFaceValidator.DocumentInfo?
   public var uuid: Swift.String?
   public var apiUrl: Swift.String?
   public func GetAccessToken() async -> (Swift.String, Swift.Bool)
+  public func StartSession(accessToken: Swift.String, challengeCount: Swift.Int? = nil) async -> BiometricFaceValidator.BioTrustSession?
   @objc deinit
 }
 public struct DocumentInfo {
@@ -221,6 +227,7 @@ public class RegisterResult {
   public var validationMode: BiometricFaceValidator.ValidationMode
   public var apiUrl: Swift.String
   public var accessToken: Swift.String
+  public var session: BiometricFaceValidator.BioTrustSession?
   public func BiometricValidation(face: UIKit.UIImage, livenessConfidence: Swift.Float) async throws -> (Swift.Bool, BiometricFaceValidator.DocumentValidationResult?, BiometricFaceValidator.FaceMatchResponse?)
   @objc deinit
 }

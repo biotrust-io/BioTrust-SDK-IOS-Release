@@ -30,23 +30,23 @@
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		b2g35abHx8CBOzeyqH8jdpNRP4I=
+		FGJqYh7lOcqV1QR7TNm5TSZb8Wo=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		yQ++TPzzIuCjgVBt2eLS7CkaV0k=
+		ErchheyHQR/SfpFTEjAVXx4jqVs=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		wpe4Me+AL9wLUUDpcTvC9D02VFg=
+		/bzxWmjJtLnGxYAk6CHNsKqPGvs=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		yQ++TPzzIuCjgVBt2eLS7CkaV0k=
+		ErchheyHQR/SfpFTEjAVXx4jqVs=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3cGYhwYIcbL7yaS2+SYG7j44/e8=
+		zO23s4YQk1tGlGU5txUcSiv20ow=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -146,35 +146,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1XLUUIaRpl+ChUn57+j0TCZ1Bvs40Du3hBM2L5Ni6Xs=
+			wDq6jNzL1a3mjY3soQi2uNDf+osvav/Qshk+zoBIkeE=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E3/HrGAsH50RqO/PFYoWHymJ/zHHf13/daH2TFyiuQA=
+			XE3kuxN86I3HWfAClt/0N4LIPUtGsjNCD+V58M2E7Lk=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gWg7rW0rQKhv1pRXL6Gb4OL2d6z6uzG7/Bjab947GT0=
+			gL9ib1aKDVhGto0Xd1ATWkciK0zxY+iMJpQteheFyVw=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E3/HrGAsH50RqO/PFYoWHymJ/zHHf13/daH2TFyiuQA=
+			XE3kuxN86I3HWfAClt/0N4LIPUtGsjNCD+V58M2E7Lk=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nki7WMfkW4icRZjIOs0d2y3Zn3Iwdc2DXRzh6HKLJIg=
+			e6+GVu3PODkKNl3vL7WuLkloRr9eP/3yT6ofMEueX6g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
