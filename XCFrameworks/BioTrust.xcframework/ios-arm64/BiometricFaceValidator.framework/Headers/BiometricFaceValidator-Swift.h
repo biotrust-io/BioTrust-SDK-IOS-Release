@@ -311,7 +311,47 @@ typedef SWIFT_ENUM(NSInteger, BTBrandPosition, open) {
   BTBrandPositionTopRight = 3,
 };
 
+/// Tipo de documento, no formato que atravessa a fronteira para Objective-C.
+/// O enum Swift usa String como valor bruto, o que não é exportável. A conversão fica aqui e
+/// não em cada binding.
+typedef SWIFT_ENUM(NSInteger, BTDocumentType, open) {
+  BTDocumentTypeCpf = 0,
+  BTDocumentTypeRg = 1,
+  BTDocumentTypeCnh = 2,
+};
+
 @class NSString;
+@class UIViewController;
+@class BTFaceMatchManagerResult;
+
+/// Cadastro do FaceMatch com tela própria, visível a Objective-C.
+/// Mesmo desenho de <code>BTValidationLauncher</code>: bloco no lugar de protocolo, entregue uma única vez
+/// na main thread. É o que o pacote MAUI e o React Native consomem.
+SWIFT_CLASS("_TtC22BiometricFaceValidator26BTFaceMatchManagerLauncher")
+@interface BTFaceMatchManagerLauncher : NSObject
+- (nonnull instancetype)initWithApiUrl:(NSString * _Nonnull)apiUrl uuid:(NSString * _Nonnull)uuid locale:(NSString * _Nullable)locale themeMode:(NSString * _Nullable)themeMode OBJC_DESIGNATED_INITIALIZER;
+/// Cadastra uma pessoa nova: abre a captura e grava o rosto aprovado.
+- (void)addPersonFrom:(UIViewController * _Nonnull)viewController name:(NSString * _Nonnull)name document:(NSString * _Nonnull)document documentType:(enum BTDocumentType)documentType completion:(void (^ _Nonnull)(BTFaceMatchManagerResult * _Nonnull))completion;
+/// Troca a foto de uma pessoa já cadastrada.
+- (void)editPersonFrom:(UIViewController * _Nonnull)viewController uniqueId:(NSString * _Nonnull)uniqueId name:(NSString * _Nonnull)name document:(NSString * _Nonnull)document completion:(void (^ _Nonnull)(BTFaceMatchManagerResult * _Nonnull))completion;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Resultado de um cadastro ou atualização no FaceMatch.
+SWIFT_CLASS("_TtC22BiometricFaceValidator24BTFaceMatchManagerResult")
+@interface BTFaceMatchManagerResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly, copy) NSString * _Nonnull message;
+/// Identificador da pessoa criada. Vazio numa atualização, que não cria nada.
+@property (nonatomic, readonly, copy) NSString * _Nullable uniqueId;
+/// A tela foi fechada sem concluir — nem sucesso, nem erro.
+@property (nonatomic, readonly) BOOL cancelled;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 enum BTValidationMode : NSInteger;
 @class NSDate;
 @class UIImage;
@@ -343,7 +383,6 @@ SWIFT_CLASS("_TtC22BiometricFaceValidator18BTValidationConfig")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIViewController;
 @class BTValidationResult;
 
 /// Abre a validação e devolve o resultado por bloco.
@@ -503,6 +542,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)printDeviceInfo;
 + (BOOL)isDeviceIDSaved SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getCurrentIdentifierForVendor SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// Abre a tela de cadastro do FaceMatch.
+/// Antes disto, cadastrar uma pessoa no iOS era um trabalho do aplicativo: abrir uma captura,
+/// tirar a foto do jeito que desse, e chamar <code>FaceMatchService</code> por conta própria. Duas coisas
+/// saíam erradas nesse caminho — a foto não passava por prova de vida, então dava para cadastrar
+/// uma pessoa a partir de uma foto impressa; e cada aplicativo resolvia a captura de um jeito,
+/// então a qualidade do rosto que entrava na base variava de integrador para integrador. No
+/// Android e na Web isso nunca aconteceu, porque lá o cadastro sempre teve tela própria.
+/// Aqui a tela é a mesma da validação, no modo de captura: o mesmo oval, os mesmos desafios,
+/// a mesma prova de vida. Só o final muda — em vez de consultar, grava.
+SWIFT_CLASS("_TtC22BiometricFaceValidator24FaceMatchManagerLauncher")
+@interface FaceMatchManagerLauncher : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

@@ -115,6 +115,45 @@ public class FacialBiometrics : Swift.Codable {
   @objc public func launch(from viewController: UIKit.UIViewController, completion: @escaping (BiometricFaceValidator.BTValidationResult) -> Swift.Void)
   @objc deinit
 }
+@objc public enum BTDocumentType : Swift.Int {
+  case cpf = 0
+  case rg = 1
+  case cnh = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class BTFaceMatchManagerResult : ObjectiveC.NSObject {
+  @objc final public let isSuccess: Swift.Bool
+  @objc final public let message: Swift.String
+  @objc final public let uniqueId: Swift.String?
+  @objc final public let cancelled: Swift.Bool
+  @objc deinit
+}
+@objc public class BTFaceMatchManagerLauncher : ObjectiveC.NSObject {
+  @objc public init(apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil)
+  @objc public func addPerson(from viewController: UIKit.UIViewController, name: Swift.String, document: Swift.String, documentType: BiometricFaceValidator.BTDocumentType, completion: @escaping (BiometricFaceValidator.BTFaceMatchManagerResult) -> Swift.Void)
+  @objc public func editPerson(from viewController: UIKit.UIViewController, uniqueId: Swift.String, name: Swift.String, document: Swift.String, completion: @escaping (BiometricFaceValidator.BTFaceMatchManagerResult) -> Swift.Void)
+  @objc deinit
+}
+public protocol FaceMatchManagerCallback {
+  func onSuccess(result: BiometricFaceValidator.Transaction, uniqueId: Swift.String?)
+  func onError(error: Swift.String)
+  func onCancel()
+}
+@objc public class FaceMatchManagerLauncher : ObjectiveC.NSObject {
+  public init(callback: (any BiometricFaceValidator.FaceMatchManagerCallback)?, apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil)
+  public func addPerson(from viewController: UIKit.UIViewController, name: Swift.String, document: Swift.String, documentType: BiometricFaceValidator.DocumentType)
+  public func editPerson(from viewController: UIKit.UIViewController, uniqueId: Swift.String, name: Swift.String, document: Swift.String)
+  public func setCallback(_ callback: (any BiometricFaceValidator.FaceMatchManagerCallback)?)
+  public func setLocale(_ locale: Swift.String?)
+  public func setThemeMode(_ themeMode: Swift.String?)
+  public func setUuid(_ uuid: Swift.String)
+  public func setAPIUrl(_ apiUrl: Swift.String)
+  @objc deinit
+}
 public struct FaceBox {
   public let confidence: Swift.Float
   public let x1: Swift.Float
@@ -488,6 +527,9 @@ extension BiometricFaceValidator.BTValidationMode : Swift.RawRepresentable {}
 extension BiometricFaceValidator.BTBrandPosition : Swift.Equatable {}
 extension BiometricFaceValidator.BTBrandPosition : Swift.Hashable {}
 extension BiometricFaceValidator.BTBrandPosition : Swift.RawRepresentable {}
+extension BiometricFaceValidator.BTDocumentType : Swift.Equatable {}
+extension BiometricFaceValidator.BTDocumentType : Swift.Hashable {}
+extension BiometricFaceValidator.BTDocumentType : Swift.RawRepresentable {}
 extension BiometricFaceValidator.DocumentType : Swift.Equatable {}
 extension BiometricFaceValidator.DocumentType : Swift.Hashable {}
 extension BiometricFaceValidator.DocumentType : Swift.RawRepresentable {}
