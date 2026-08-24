@@ -47,6 +47,74 @@ public class FacialBiometrics : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc public enum BTValidationMode : Swift.Int {
+  case livenessOnly = 0
+  case livenessWithDocument = 1
+  case faceMatch = 2
+  case faceMatchExact = 3
+  case faceCapture = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BTBrandPosition : Swift.Int {
+  case bottomLeft = 0
+  case bottomRight = 1
+  case topLeft = 2
+  case topRight = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class BTValidationConfig : ObjectiveC.NSObject {
+  @objc public var uuid: Swift.String?
+  @objc public var apiUrl: Swift.String?
+  @objc public var validationMode: BiometricFaceValidator.BTValidationMode
+  @objc public var challengeCount: Swift.Int
+  @objc public var requireAllChallenges: Swift.Bool
+  @objc public var requireChallenges: Swift.Bool
+  @objc public var documentNumber: Swift.String?
+  @objc public var documentCpf: Swift.String?
+  @objc public var documentBirthDate: Foundation.Date?
+  @objc public var timeoutMillis: Swift.Int
+  @objc public var locale: Swift.String?
+  @objc public var themeMode: Swift.String?
+  @objc public var enableSoundFeedback: Swift.Bool
+  @objc public var enableHapticFeedback: Swift.Bool
+  @objc public var cornerImage: UIKit.UIImage?
+  @objc public var cornerImagePosition: BiometricFaceValidator.BTBrandPosition
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class BTValidationResult : ObjectiveC.NSObject {
+  @objc final public let isSuccess: Swift.Bool
+  @objc final public let message: Swift.String
+  @objc final public let vivacityConfidence: Swift.Float
+  @objc final public let faceImage: UIKit.UIImage?
+  @objc final public let validationMode: BiometricFaceValidator.BTValidationMode
+  @objc final public let hasDocumentValidation: Swift.Bool
+  @objc final public let documentSimilarity: Swift.Float
+  @objc final public let documentFullName: Swift.String?
+  @objc final public let documentNumber: Swift.String?
+  @objc final public let documentBirthDate: Swift.String?
+  @objc final public let documentProbability: Swift.String?
+  @objc final public let hasFaceMatchValidation: Swift.Bool
+  @objc final public let match: Foundation.NSNumber?
+  @objc final public let matchedPersonId: Swift.String?
+  @objc final public let matchConfidence: Foundation.NSNumber?
+  @objc final public let personName: Swift.String?
+  @objc final public let personDocument: Swift.String?
+  @objc deinit
+}
+@objc public class BTValidationLauncher : ObjectiveC.NSObject {
+  @objc public init(config: BiometricFaceValidator.BTValidationConfig)
+  @objc public func launch(from viewController: UIKit.UIViewController, completion: @escaping (BiometricFaceValidator.BTValidationResult) -> Swift.Void)
+  @objc deinit
+}
 public struct FaceBox {
   public let confidence: Swift.Float
   public let x1: Swift.Float
@@ -414,6 +482,12 @@ public class Challenge {
   public static func isFrameworkConfigured() -> Swift.Bool
   @objc deinit
 }
+extension BiometricFaceValidator.BTValidationMode : Swift.Equatable {}
+extension BiometricFaceValidator.BTValidationMode : Swift.Hashable {}
+extension BiometricFaceValidator.BTValidationMode : Swift.RawRepresentable {}
+extension BiometricFaceValidator.BTBrandPosition : Swift.Equatable {}
+extension BiometricFaceValidator.BTBrandPosition : Swift.Hashable {}
+extension BiometricFaceValidator.BTBrandPosition : Swift.RawRepresentable {}
 extension BiometricFaceValidator.DocumentType : Swift.Equatable {}
 extension BiometricFaceValidator.DocumentType : Swift.Hashable {}
 extension BiometricFaceValidator.DocumentType : Swift.RawRepresentable {}

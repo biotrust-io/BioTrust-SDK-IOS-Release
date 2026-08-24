@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/BiometricFaceValidator-Swift.h</key>
 		<data>
-		8rEyswN5H2fOCMiUuoB+b0tfubg=
+		9yDyx/GWI6ZHDrOerG/r7HXbVBA=
 		</data>
 		<key>Headers/BiometricFaceValidator.h</key>
 		<data>
@@ -30,23 +30,23 @@
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		FGJqYh7lOcqV1QR7TNm5TSZb8Wo=
+		UvU2FXXwsy9/5I4rVHuNAziKnE0=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ErchheyHQR/SfpFTEjAVXx4jqVs=
+		T/v+88HjgOCauKiPd/8Vw0wTq8c=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		/bzxWmjJtLnGxYAk6CHNsKqPGvs=
+		HMBl4OpKiL6ruMcsiRAVKJJsYKo=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ErchheyHQR/SfpFTEjAVXx4jqVs=
+		T/v+88HjgOCauKiPd/8Vw0wTq8c=
 		</data>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zO23s4YQk1tGlGU5txUcSiv20ow=
+		eMndMaFec24WYBTXzwsr+N//tK8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eI0jmrJVEUpBlJYu1h31hFIqeeuSZbOAR3dkqxKUGlc=
+			lxv4T8aZ3/SGUc6Wb0WXmzPdy2/p9QlrzridjGTed4M=
 			</data>
 		</dict>
 		<key>Headers/BiometricFaceValidator.h</key>
@@ -146,35 +146,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wDq6jNzL1a3mjY3soQi2uNDf+osvav/Qshk+zoBIkeE=
+			z/H7GDxpxKEWUzFXrzAIcBrOesLw/qbvl/KSSBuAhCA=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XE3kuxN86I3HWfAClt/0N4LIPUtGsjNCD+V58M2E7Lk=
+			0BDmaou/GZ9A9cFl3MOTlBkRHjGGVKVlei6nJ16baI0=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gL9ib1aKDVhGto0Xd1ATWkciK0zxY+iMJpQteheFyVw=
+			irAovV1Izy+ljefEX33j98IzRFITwZR779Fiun/0ugY=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XE3kuxN86I3HWfAClt/0N4LIPUtGsjNCD+V58M2E7Lk=
+			0BDmaou/GZ9A9cFl3MOTlBkRHjGGVKVlei6nJ16baI0=
 			</data>
 		</dict>
 		<key>Modules/BiometricFaceValidator.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e6+GVu3PODkKNl3vL7WuLkloRr9eP/3yT6ofMEueX6g=
+			gTFWyXxs6hUzF97bGJEmsT9b5zYfAjwSiphpgebtzs8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

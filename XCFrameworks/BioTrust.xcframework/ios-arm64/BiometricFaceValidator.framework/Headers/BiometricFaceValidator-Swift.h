@@ -303,7 +303,102 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+/// Posição da marca do cliente na tela de captura.
+typedef SWIFT_ENUM(NSInteger, BTBrandPosition, open) {
+  BTBrandPositionBottomLeft = 0,
+  BTBrandPositionBottomRight = 1,
+  BTBrandPositionTopLeft = 2,
+  BTBrandPositionTopRight = 3,
+};
+
 @class NSString;
+enum BTValidationMode : NSInteger;
+@class NSDate;
+@class UIImage;
+
+/// Configuração de uma validação.
+/// Propriedades simples em vez de builder encadeado: builder com retorno de <code>Self</code> fica
+/// desconfortável em Objective-C e não traz ganho para quem consome via binding.
+SWIFT_CLASS("_TtC22BiometricFaceValidator18BTValidationConfig")
+@interface BTValidationConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable uuid;
+@property (nonatomic, copy) NSString * _Nullable apiUrl;
+@property (nonatomic) enum BTValidationMode validationMode;
+@property (nonatomic) NSInteger challengeCount;
+@property (nonatomic) BOOL requireAllChallenges;
+/// Vale para <code>faceMatch</code> e <code>faceMatchExact</code>. No Swift viaja dentro do case.
+@property (nonatomic) BOOL requireChallenges;
+/// Obrigatório em <code>faceMatchExact</code>: o documento que a pessoa diz ser.
+@property (nonatomic, copy) NSString * _Nullable documentNumber;
+/// Obrigatórios em <code>livenessWithDocument</code>.
+@property (nonatomic, copy) NSString * _Nullable documentCpf;
+@property (nonatomic, copy) NSDate * _Nullable documentBirthDate;
+@property (nonatomic) NSInteger timeoutMillis;
+@property (nonatomic, copy) NSString * _Nullable locale;
+@property (nonatomic, copy) NSString * _Nullable themeMode;
+@property (nonatomic) BOOL enableSoundFeedback;
+@property (nonatomic) BOOL enableHapticFeedback;
+@property (nonatomic, strong) UIImage * _Nullable cornerImage;
+@property (nonatomic) enum BTBrandPosition cornerImagePosition;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIViewController;
+@class BTValidationResult;
+
+/// Abre a validação e devolve o resultado por bloco.
+/// Um bloco no lugar do protocolo de callback: binding não precisa implementar protocolo
+/// nem manter objeto vivo, e o mesmo formato serve para .NET, React Native e Flutter.
+SWIFT_CLASS("_TtC22BiometricFaceValidator20BTValidationLauncher")
+@interface BTValidationLauncher : NSObject
+- (nonnull instancetype)initWithConfig:(BTValidationConfig * _Nonnull)config OBJC_DESIGNATED_INITIALIZER;
+/// Abre a tela de validação. O bloco é chamado UMA vez, sempre na thread principal.
+- (void)launchFrom:(UIViewController * _Nonnull)viewController completion:(void (^ _Nonnull)(BTValidationResult * _Nonnull))completion;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Modo de validação, achatado para Objective-C.
+/// Os parâmetros que no Swift viajam dentro do case (<code>requireChallenges</code>, <code>documentNumber</code>)
+/// ficam em <code>BTValidationConfig</code>, como no Android.
+typedef SWIFT_ENUM(NSInteger, BTValidationMode, open) {
+  BTValidationModeLivenessOnly = 0,
+  BTValidationModeLivenessWithDocument = 1,
+  BTValidationModeFaceMatch = 2,
+  BTValidationModeFaceMatchExact = 3,
+  BTValidationModeFaceCapture = 4,
+};
+
+@class NSNumber;
+
+/// Resultado de uma validação, achatado.
+/// Tudo é propriedade, e não método <code>get…()</code>: propriedade vira <code>@property</code> no cabeçalho,
+/// o que qualquer binding lê como campo em vez de chamada.
+SWIFT_CLASS("_TtC22BiometricFaceValidator18BTValidationResult")
+@interface BTValidationResult : NSObject
+@property (nonatomic, readonly) BOOL isSuccess;
+@property (nonatomic, readonly, copy) NSString * _Nonnull message;
+@property (nonatomic, readonly) float vivacityConfidence;
+@property (nonatomic, readonly, strong) UIImage * _Nullable faceImage;
+@property (nonatomic, readonly) enum BTValidationMode validationMode;
+@property (nonatomic, readonly) BOOL hasDocumentValidation;
+@property (nonatomic, readonly) float documentSimilarity;
+@property (nonatomic, readonly, copy) NSString * _Nullable documentFullName;
+@property (nonatomic, readonly, copy) NSString * _Nullable documentNumber;
+@property (nonatomic, readonly, copy) NSString * _Nullable documentBirthDate;
+@property (nonatomic, readonly, copy) NSString * _Nullable documentProbability;
+@property (nonatomic, readonly) BOOL hasFaceMatchValidation;
+/// <code>NSNumber</code> em vez de <code>Bool</code> porque o valor pode ser AUSENTE — e ausente é diferente
+/// de “não deu match”. Um <code>Bool</code> puro apagaria essa distinção.
+@property (nonatomic, readonly, strong) NSNumber * _Nullable match;
+@property (nonatomic, readonly, copy) NSString * _Nullable matchedPersonId;
+@property (nonatomic, readonly, strong) NSNumber * _Nullable matchConfidence;
+@property (nonatomic, readonly, copy) NSString * _Nullable personName;
+@property (nonatomic, readonly, copy) NSString * _Nullable personDocument;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 /// Dados para autenticação biométrica
 SWIFT_CLASS("_TtC22BiometricFaceValidator16BioTrustAuthData")
