@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios17.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name BiometricFaceValidator
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name BiometricFaceValidator
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import ARKit
 import AVFoundation
@@ -250,15 +250,38 @@ extension BiometricFaceValidator.DeviceInfoHelper {
   @objc public static func isDeviceIDSaved() -> Swift.Bool
   @objc public static func getCurrentIdentifierForVendor() -> Swift.String?
 }
-public class RegisterResponse : Swift.Codable {
-  @objc deinit
+public struct FaceMatchTransaction : Swift.Codable {
+  public let code: Swift.Int
+  public let message: Swift.String?
+  public let isSuccess: Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-public class UpdateResponse : Swift.Codable {
-  @objc deinit
+public struct RegisterResponse : Swift.Codable {
+  public let transaction: BiometricFaceValidator.FaceMatchTransaction
+  public let uniqueID: Swift.String?
+  public var isSuccess: Swift.Bool {
+    get
+  }
+  public var message: Swift.String? {
+    get
+  }
+  public var uniqueId: Swift.String? {
+    get
+  }
   public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UpdateResponse : Swift.Codable {
+  public let transaction: BiometricFaceValidator.FaceMatchTransaction
+  public var isSuccess: Swift.Bool {
+    get
+  }
+  public var message: Swift.String? {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum DocumentType : Swift.String, Swift.Codable {
   case cpf

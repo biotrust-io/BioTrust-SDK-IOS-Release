@@ -14,6 +14,20 @@
           "type" : "local"
         },
         "targetName" : "BioTrust"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "biotrust-sdk-ios-release",
+          "kind" : "root",
+          "location" : "/Volumes/Production/Development/BioTrust/BioTrust-SDK-IOS-Release",
+          "name" : "BioTrust-SDK-IOS-Release"
+        },
+        "path" : "/Volumes/Production/Development/BioTrust/BioTrust-SDK-IOS-Release/XCFrameworks/FingerprintPro.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "FingerprintPro"
       }
     ],
     "dependencies" : [

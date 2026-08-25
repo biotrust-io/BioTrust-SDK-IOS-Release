@@ -5,18 +5,22 @@ import PackageDescription
 let package = Package(
     name: "BioTrust",
     platforms: [
-        .iOS(.v12) // ajuste para a versão mínima compatível com seu xcframework
+        .iOS(.v15)
     ],
     products: [
         .library(
             name: "BioTrust",
-            targets: ["BioTrust"]
+            targets: ["BioTrust", "FingerprintPro"]
         ),
     ],
     targets: [
         .binaryTarget(
             name: "BioTrust",
             path: "./XCFrameworks/BioTrust.xcframework"
+        ),
+        .binaryTarget(
+            name: "FingerprintPro",
+            path: "./XCFrameworks/FingerprintPro.xcframework"
         )
     ]
 )
