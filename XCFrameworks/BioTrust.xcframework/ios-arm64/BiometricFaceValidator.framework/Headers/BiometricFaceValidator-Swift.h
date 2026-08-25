@@ -327,7 +327,7 @@ typedef SWIFT_ENUM(NSInteger, BTDocumentType, open) {
 /// Cadastro do FaceMatch com tela própria, visível a Objective-C.
 /// Mesmo desenho de <code>BTValidationLauncher</code>: bloco no lugar de protocolo, entregue uma única vez
 /// na main thread. É o que o pacote MAUI e o React Native consomem.
-SWIFT_CLASS("_TtC22BiometricFaceValidator26BTFaceMatchManagerLauncher")
+SWIFT_CLASS_NAMED("BTFaceMatchManagerLauncher")
 @interface BTFaceMatchManagerLauncher : NSObject
 - (nonnull instancetype)initWithApiUrl:(NSString * _Nonnull)apiUrl uuid:(NSString * _Nonnull)uuid locale:(NSString * _Nullable)locale themeMode:(NSString * _Nullable)themeMode OBJC_DESIGNATED_INITIALIZER;
 /// Cadastra uma pessoa nova: abre a captura e grava o rosto aprovado.
@@ -340,7 +340,7 @@ SWIFT_CLASS("_TtC22BiometricFaceValidator26BTFaceMatchManagerLauncher")
 
 
 /// Resultado de um cadastro ou atualização no FaceMatch.
-SWIFT_CLASS("_TtC22BiometricFaceValidator24BTFaceMatchManagerResult")
+SWIFT_CLASS_NAMED("BTFaceMatchManagerResult")
 @interface BTFaceMatchManagerResult : NSObject
 @property (nonatomic, readonly) BOOL isSuccess;
 @property (nonatomic, readonly, copy) NSString * _Nonnull message;
@@ -359,7 +359,7 @@ enum BTValidationMode : NSInteger;
 /// Configuração de uma validação.
 /// Propriedades simples em vez de builder encadeado: builder com retorno de <code>Self</code> fica
 /// desconfortável em Objective-C e não traz ganho para quem consome via binding.
-SWIFT_CLASS("_TtC22BiometricFaceValidator18BTValidationConfig")
+SWIFT_CLASS_NAMED("BTValidationConfig")
 @interface BTValidationConfig : NSObject
 @property (nonatomic, copy) NSString * _Nullable uuid;
 @property (nonatomic, copy) NSString * _Nullable apiUrl;
@@ -388,7 +388,7 @@ SWIFT_CLASS("_TtC22BiometricFaceValidator18BTValidationConfig")
 /// Abre a validação e devolve o resultado por bloco.
 /// Um bloco no lugar do protocolo de callback: binding não precisa implementar protocolo
 /// nem manter objeto vivo, e o mesmo formato serve para .NET, React Native e Flutter.
-SWIFT_CLASS("_TtC22BiometricFaceValidator20BTValidationLauncher")
+SWIFT_CLASS_NAMED("BTValidationLauncher")
 @interface BTValidationLauncher : NSObject
 - (nonnull instancetype)initWithConfig:(BTValidationConfig * _Nonnull)config OBJC_DESIGNATED_INITIALIZER;
 /// Abre a tela de validação. O bloco é chamado UMA vez, sempre na thread principal.
@@ -413,7 +413,7 @@ typedef SWIFT_ENUM(NSInteger, BTValidationMode, open) {
 /// Resultado de uma validação, achatado.
 /// Tudo é propriedade, e não método <code>get…()</code>: propriedade vira <code>@property</code> no cabeçalho,
 /// o que qualquer binding lê como campo em vez de chamada.
-SWIFT_CLASS("_TtC22BiometricFaceValidator18BTValidationResult")
+SWIFT_CLASS_NAMED("BTValidationResult")
 @interface BTValidationResult : NSObject
 @property (nonatomic, readonly) BOOL isSuccess;
 @property (nonatomic, readonly, copy) NSString * _Nonnull message;

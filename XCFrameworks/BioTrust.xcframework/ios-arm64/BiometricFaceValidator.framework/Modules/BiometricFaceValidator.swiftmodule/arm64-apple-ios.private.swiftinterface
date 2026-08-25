@@ -70,7 +70,7 @@ public class FacialBiometrics : Swift.Codable {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class BTValidationConfig : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(BTValidationConfig) public class BTValidationConfig : ObjectiveC.NSObject {
   @objc public var uuid: Swift.String?
   @objc public var apiUrl: Swift.String?
   @objc public var validationMode: BiometricFaceValidator.BTValidationMode
@@ -90,7 +90,7 @@ public class FacialBiometrics : Swift.Codable {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class BTValidationResult : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc(BTValidationResult) public class BTValidationResult : ObjectiveC.NSObject {
   @objc final public let isSuccess: Swift.Bool
   @objc final public let message: Swift.String
   @objc final public let vivacityConfidence: Swift.Float
@@ -110,7 +110,7 @@ public class FacialBiometrics : Swift.Codable {
   @objc final public let personDocument: Swift.String?
   @objc deinit
 }
-@objc public class BTValidationLauncher : ObjectiveC.NSObject {
+@objc(BTValidationLauncher) public class BTValidationLauncher : ObjectiveC.NSObject {
   @objc public init(config: BiometricFaceValidator.BTValidationConfig)
   @objc public func launch(from viewController: UIKit.UIViewController, completion: @escaping (BiometricFaceValidator.BTValidationResult) -> Swift.Void)
   @objc deinit
@@ -125,14 +125,14 @@ public class FacialBiometrics : Swift.Codable {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc public class BTFaceMatchManagerResult : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc(BTFaceMatchManagerResult) public class BTFaceMatchManagerResult : ObjectiveC.NSObject {
   @objc final public let isSuccess: Swift.Bool
   @objc final public let message: Swift.String
   @objc final public let uniqueId: Swift.String?
   @objc final public let cancelled: Swift.Bool
   @objc deinit
 }
-@objc public class BTFaceMatchManagerLauncher : ObjectiveC.NSObject {
+@objc(BTFaceMatchManagerLauncher) public class BTFaceMatchManagerLauncher : ObjectiveC.NSObject {
   @objc public init(apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil)
   @objc public func addPerson(from viewController: UIKit.UIViewController, name: Swift.String, document: Swift.String, documentType: BiometricFaceValidator.BTDocumentType, completion: @escaping (BiometricFaceValidator.BTFaceMatchManagerResult) -> Swift.Void)
   @objc public func editPerson(from viewController: UIKit.UIViewController, uniqueId: Swift.String, name: Swift.String, document: Swift.String, completion: @escaping (BiometricFaceValidator.BTFaceMatchManagerResult) -> Swift.Void)
