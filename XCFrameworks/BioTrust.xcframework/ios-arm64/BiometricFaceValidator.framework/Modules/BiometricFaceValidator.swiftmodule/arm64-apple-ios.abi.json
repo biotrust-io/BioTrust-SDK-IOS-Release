@@ -18954,6 +18954,20 @@
       "value": "10"
     },
     {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/AuthService.swift",
+      "kind": "StringLiteral",
+      "offset": 1214,
+      "length": 32,
+      "value": "\"biotrust.antiSpoofingThreshold\""
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/AuthService.swift",
+      "kind": "FloatLiteral",
+      "offset": 1343,
+      "length": 4,
+      "value": "0.70"
+    },
+    {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
       "offset": 385,
@@ -19397,9 +19411,16 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/FingerprintService.swift",
       "kind": "BooleanLiteral",
-      "offset": 314,
+      "offset": 346,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/FingerprintService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 689,
+      "length": 3,
+      "value": "120"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceOverlayView.swift",
