@@ -280,6 +280,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
 #endif
@@ -303,6 +304,128 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+/// Ajustes de política do controle de acesso.
+/// Tudo aqui é decisão de operação, não de biometria — por isso vem em uma classe própria e
+/// com valores que fazem sentido numa catraca de prédio.
+SWIFT_CLASS_NAMED("BTAccessConfig")
+@interface BTAccessConfig : NSObject
+@property (nonatomic, copy) NSString * _Nonnull apiUrl;
+@property (nonatomic, copy) NSString * _Nonnull uuid;
+@property (nonatomic) BOOL useFrontCamera;
+/// Revogar a liberação quando aparecer um rosto sem match antes de a pessoa passar.
+/// É o que impede a carona: alguém autorizado libera a catraca e outra pessoa entra junto.
+/// Ligado por padrão; desligue quando a catraca já tratar isso por hardware.
+@property (nonatomic) BOOL revokeOnMismatch;
+/// Quanto tempo a liberação vale sem ninguém passar. Depois disso, rearma sozinha.
+/// Existe como rede de proteção: se o sensor da catraca falhar e ninguém chamar
+/// <code>personPassed()</code>, o terminal voltaria a funcionar em vez de ficar morto.
+@property (nonatomic) NSInteger releaseWindowSeconds;
+/// Trava depois de um rosto que passou na vivacidade mas não está na base.
+/// Menor que a janela de liberação porque não há catraca girando para esperar — só evita
+/// consultar o servidor em rajada com a pessoa parada na frente.
+@property (nonatomic) NSInteger unknownCooldownSeconds;
+/// Sem rosto por este tempo, avisa que está ocioso. Zero desliga o aviso.
+@property (nonatomic) NSInteger idleSeconds;
+/// Manter a câmera aberta procurando presença quando não há sensor de movimento.
+@property (nonatomic) BOOL watchForFace;
+/// Nome do ponto de acesso, para identificar o terminal na administração.
+@property (nonatomic, copy) NSString * _Nullable terminalLabel;
+/// Deixar a configuração do ponto, feita no Dashboard, sobrepor o que está aqui.
+/// Ligado por padrão. Desligue só quando o aplicativo tiver motivo próprio para mandar —
+/// um totem que também é catraca, por exemplo — porque desligado o terminal deixa de
+/// responder à administração e passa a depender de novo deploy para qualquer ajuste.
+@property (nonatomic) BOOL useServerPolicy;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class BTAccessSession;
+enum BTAccessState : NSInteger;
+
+/// O que a sessão comunica ao aplicativo de controle de acesso.
+/// Deliberadamente não existe nada aqui sobre catraca, relé ou porta: acionar o equipamento é
+/// do integrador, que conhece o protocolo dele. A sessão diz o que enxergou e o que decidiu.
+SWIFT_PROTOCOL_NAMED("BTAccessDelegate")
+@protocol BTAccessDelegate
+- (void)accessSession:(BTAccessSession * _Nonnull)session didChangeState:(enum BTAccessState)state;
+@optional
+/// Alguém entrou ou saiu do campo da câmera. Serve para acender a tela e apagar depois.
+- (void)accessSession:(BTAccessSession * _Nonnull)session didDetectPresence:(BOOL)present;
+@required
+/// Rosto reconhecido: pode liberar.
+- (void)accessSession:(BTAccessSession * _Nonnull)session didAuthorize:(NSString * _Nonnull)personId name:(NSString * _Nonnull)name document:(NSString * _Nonnull)document confidence:(double)confidence;
+@optional
+/// Liberação revogada antes de a pessoa passar. Feche de novo.
+- (void)accessSessionDidRevoke:(BTAccessSession * _Nonnull)session;
+/// Rosto vivo, mas não está na base.
+- (void)accessSessionDidFindUnknown:(BTAccessSession * _Nonnull)session;
+/// Não passou na vivacidade, ou a leitura falhou.
+- (void)accessSession:(BTAccessSession * _Nonnull)session didDeny:(NSString * _Nonnull)message;
+/// Tempo sem ninguém na frente. Momento de mostrar a tela de espera.
+- (void)accessSessionDidBecomeIdle:(BTAccessSession * _Nonnull)session;
+/// Onde o rosto está no vídeo, em coordenadas normalizadas (0..1, origem no topo-esquerda).
+/// Chega a cada frame com alguém no campo. Serve para desenhar o quadro sobre a câmera —
+/// e continua chegando com a análise suspensa, porque a pessoa continua ali.
+- (void)accessSession:(BTAccessSession * _Nonnull)session didTrackFace:(CGRect)box;
+/// O que o motor está fazendo agora, em uma ou duas linhas.
+/// Para o aplicativo mostrar na tela durante uma instalação ou uma investigação. Num
+/// terminal na parede não há console do Xcode: sem isto, “aparece o rosto e nada
+/// acontece” não tem como ser diagnosticado no lugar onde acontece.
+- (void)accessSession:(BTAccessSession * _Nonnull)session didReportDiagnostics:(NSString * _Nonnull)texto;
+/// Reconhecida, e sem permissão para ESTE ponto.
+/// Separado de <code>didFindUnknown</code> porque a portaria trata os dois casos de forma diferente:
+/// um rosto desconhecido é visita, e um morador na porta errada é orientação. Mostrar
+/// “não reconhecido” para quem está cadastrado manda a pessoa procurar o cadastro que ela
+/// já tem.
+- (void)accessSessionDidDenyPermission:(BTAccessSession * _Nonnull)session reason:(NSString * _Nonnull)reason;
+@end
+
+@class UIView;
+
+/// FaceMatch contínuo para controle de acesso.
+/// Diferente de <code>BTValidationLauncher</code>, que abre uma tela, faz uma leitura e sai, esta sessão
+/// fica de pé sobre uma view do integrador e entrega uma decisão por pessoa.
+/// A regra que a torna utilizável numa catraca: <em>uma liberação por armação</em>. Depois de
+/// autorizar, a sessão para de autorizar — não importa quantos rostos passem na frente — até
+/// que o integrador avise que a pessoa passou, ou até a janela vencer. Sem isso, uma pessoa
+/// parada em frente ao aparelho geraria liberação atrás de liberação.
+SWIFT_CLASS_NAMED("BTAccessSession")
+@interface BTAccessSession : NSObject
+@property (nonatomic, readonly) enum BTAccessState state;
+@property (nonatomic, weak) id <BTAccessDelegate> _Nullable delegate;
+/// Nome do ponto onde este terminal está instalado, quando o servidor informou.
+@property (nonatomic, readonly, copy) NSString * _Nullable accessPointName;
+- (nonnull instancetype)initWithConfig:(BTAccessConfig * _Nonnull)config OBJC_DESIGNATED_INITIALIZER;
+/// Abre a câmera sobre a view informada.
+/// Chame quando o sensor de movimento acusar alguém, ou uma vez só, se o aparelho não
+/// tiver sensor e você preferir deixar a vigília por rosto cuidando disso.
+- (void)startIn:(UIView * _Nonnull)previewView;
+/// Fecha a câmera e volta ao repouso.
+- (void)stop;
+/// A pessoa passou pela catraca: pode voltar a procurar.
+/// É o sinal que o integrador dá a partir do sensor do equipamento. Sem ele, a sessão só
+/// rearma quando a janela de liberação vence.
+- (void)personPassed;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Em que ponto do ciclo a sessão está.
+typedef SWIFT_ENUM(NSInteger, BTAccessState, open) {
+/// Câmera desligada.
+  BTAccessStateParada = 0,
+/// Câmera aberta, só olhando se aparece alguém. Não consulta o servidor.
+  BTAccessStateVigilia = 1,
+/// Alguém apareceu: rodando vivacidade e busca.
+  BTAccessStateProcurando = 2,
+/// Acesso liberado. Continua olhando, mas só para revogar.
+  BTAccessStateLiberada = 3,
+/// Liberação revogada: apareceu rosto sem match antes de a pessoa passar.
+  BTAccessStateBloqueada = 4,
+};
+
 /// Posição da marca do cliente na tela de captura.
 typedef SWIFT_ENUM(NSInteger, BTBrandPosition, open) {
   BTBrandPositionBottomLeft = 0,
@@ -320,18 +443,22 @@ typedef SWIFT_ENUM(NSInteger, BTDocumentType, open) {
   BTDocumentTypeCnh = 2,
 };
 
-@class NSString;
 @class UIViewController;
 @class BTFaceMatchManagerResult;
+@class UIImage;
 
 /// Cadastro do FaceMatch com tela própria, visível a Objective-C.
 /// Mesmo desenho de <code>BTValidationLauncher</code>: bloco no lugar de protocolo, entregue uma única vez
 /// na main thread. É o que o pacote MAUI e o React Native consomem.
 SWIFT_CLASS_NAMED("BTFaceMatchManagerLauncher")
 @interface BTFaceMatchManagerLauncher : NSObject
-- (nonnull instancetype)initWithApiUrl:(NSString * _Nonnull)apiUrl uuid:(NSString * _Nonnull)uuid locale:(NSString * _Nullable)locale themeMode:(NSString * _Nullable)themeMode OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiUrl:(NSString * _Nonnull)apiUrl uuid:(NSString * _Nonnull)uuid locale:(NSString * _Nullable)locale themeMode:(NSString * _Nullable)themeMode requireChallenges:(BOOL)requireChallenges OBJC_DESIGNATED_INITIALIZER;
 /// Cadastra uma pessoa nova: abre a captura e grava o rosto aprovado.
 - (void)addPersonFrom:(UIViewController * _Nonnull)viewController name:(NSString * _Nonnull)name document:(NSString * _Nonnull)document documentType:(enum BTDocumentType)documentType completion:(void (^ _Nonnull)(BTFaceMatchManagerResult * _Nonnull))completion;
+/// Cadastra a partir de uma imagem escolhida, sem abrir a câmera.
+/// A imagem passa pelo modelo local de vivacidade antes de sair do aparelho, e o servidor
+/// roda o próprio modelo de novo no cadastro.
+- (void)addPersonWithImage:(UIImage * _Nonnull)image name:(NSString * _Nonnull)name document:(NSString * _Nonnull)document documentType:(enum BTDocumentType)documentType completion:(void (^ _Nonnull)(BTFaceMatchManagerResult * _Nonnull))completion;
 /// Troca a foto de uma pessoa já cadastrada.
 - (void)editPersonFrom:(UIViewController * _Nonnull)viewController uniqueId:(NSString * _Nonnull)uniqueId name:(NSString * _Nonnull)name document:(NSString * _Nonnull)document completion:(void (^ _Nonnull)(BTFaceMatchManagerResult * _Nonnull))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -354,7 +481,6 @@ SWIFT_CLASS_NAMED("BTFaceMatchManagerResult")
 
 enum BTValidationMode : NSInteger;
 @class NSDate;
-@class UIImage;
 
 /// Configuração de uma validação.
 /// Propriedades simples em vez de builder encadeado: builder com retorno de <code>Self</code> fica
@@ -572,6 +698,7 @@ SWIFT_CLASS("_TtC22BiometricFaceValidator14SDKVersionInfo")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 #endif
 #if __has_attribute(external_source_symbol)

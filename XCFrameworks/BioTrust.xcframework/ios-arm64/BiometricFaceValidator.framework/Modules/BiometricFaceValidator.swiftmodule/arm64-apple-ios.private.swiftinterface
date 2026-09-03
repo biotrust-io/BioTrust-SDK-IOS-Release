@@ -133,8 +133,9 @@ public class FacialBiometrics : Swift.Codable {
   @objc deinit
 }
 @objc(BTFaceMatchManagerLauncher) public class BTFaceMatchManagerLauncher : ObjectiveC.NSObject {
-  @objc public init(apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil)
+  @objc public init(apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil, requireChallenges: Swift.Bool = false)
   @objc public func addPerson(from viewController: UIKit.UIViewController, name: Swift.String, document: Swift.String, documentType: BiometricFaceValidator.BTDocumentType, completion: @escaping (BiometricFaceValidator.BTFaceMatchManagerResult) -> Swift.Void)
+  @objc public func addPerson(image: UIKit.UIImage, name: Swift.String, document: Swift.String, documentType: BiometricFaceValidator.BTDocumentType, completion: @escaping (BiometricFaceValidator.BTFaceMatchManagerResult) -> Swift.Void)
   @objc public func editPerson(from viewController: UIKit.UIViewController, uniqueId: Swift.String, name: Swift.String, document: Swift.String, completion: @escaping (BiometricFaceValidator.BTFaceMatchManagerResult) -> Swift.Void)
   @objc deinit
 }
@@ -144,15 +145,115 @@ public protocol FaceMatchManagerCallback {
   func onCancel()
 }
 @objc public class FaceMatchManagerLauncher : ObjectiveC.NSObject {
-  public init(callback: (any BiometricFaceValidator.FaceMatchManagerCallback)?, apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil)
+  public init(callback: (any BiometricFaceValidator.FaceMatchManagerCallback)?, apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil, requireChallenges: Swift.Bool = false)
   public func addPerson(from viewController: UIKit.UIViewController, name: Swift.String, document: Swift.String, documentType: BiometricFaceValidator.DocumentType)
   public func editPerson(from viewController: UIKit.UIViewController, uniqueId: Swift.String, name: Swift.String, document: Swift.String)
+  public func addPerson(image: UIKit.UIImage, name: Swift.String, document: Swift.String, documentType: BiometricFaceValidator.DocumentType)
   public func setCallback(_ callback: (any BiometricFaceValidator.FaceMatchManagerCallback)?)
   public func setLocale(_ locale: Swift.String?)
   public func setThemeMode(_ themeMode: Swift.String?)
   public func setUuid(_ uuid: Swift.String)
   public func setAPIUrl(_ apiUrl: Swift.String)
   @objc deinit
+}
+public enum ResultadoDaAnalise {
+  case aprovada(score: Swift.Float)
+  case semRosto
+  case reprovada(score: Swift.Float, minimo: Swift.Float)
+  case motorIndisponivel
+}
+public enum AnaliseDeImagem {
+  public static func avaliar(_ imagem: UIKit.UIImage) -> BiometricFaceValidator.ResultadoDaAnalise
+  public static func mensagem(para resultado: BiometricFaceValidator.ResultadoDaAnalise) -> Swift.String?
+}
+@objc public enum BTAccessState : Swift.Int {
+  case parada = 0
+  case vigilia = 1
+  case procurando = 2
+  case liberada = 3
+  case bloqueada = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct BTAccessPolicy : Swift.Codable {
+  public let accessPointId: Swift.Int
+  public let name: Swift.String
+  public let revokeOnMismatch: Swift.Bool
+  public let releaseWindowSeconds: Swift.Int
+  public let unknownCooldownSeconds: Swift.Int
+  public let idleSeconds: Swift.Int
+  public let watchForFace: Swift.Bool
+  public let restrictedAccess: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc(BTAccessConfig) public class BTAccessConfig : ObjectiveC.NSObject {
+  @objc public var apiUrl: Swift.String
+  @objc public var uuid: Swift.String
+  @objc public var useFrontCamera: Swift.Bool
+  @objc public var revokeOnMismatch: Swift.Bool
+  @objc public var releaseWindowSeconds: Swift.Int
+  @objc public var unknownCooldownSeconds: Swift.Int
+  @objc public var idleSeconds: Swift.Int
+  @objc public var watchForFace: Swift.Bool
+  @objc public var terminalLabel: Swift.String?
+  @objc public var useServerPolicy: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(BTAccessDelegate) public protocol BTAccessDelegate {
+  @objc func accessSession(_ session: BiometricFaceValidator.BTAccessSession, didChangeState state: BiometricFaceValidator.BTAccessState)
+  @objc optional func accessSession(_ session: BiometricFaceValidator.BTAccessSession, didDetectPresence present: Swift.Bool)
+  @objc func accessSession(_ session: BiometricFaceValidator.BTAccessSession, didAuthorize personId: Swift.String, name: Swift.String, document: Swift.String, confidence: Swift.Double)
+  @objc optional func accessSessionDidRevoke(_ session: BiometricFaceValidator.BTAccessSession)
+  @objc optional func accessSessionDidFindUnknown(_ session: BiometricFaceValidator.BTAccessSession)
+  @objc optional func accessSession(_ session: BiometricFaceValidator.BTAccessSession, didDeny message: Swift.String)
+  @objc optional func accessSessionDidBecomeIdle(_ session: BiometricFaceValidator.BTAccessSession)
+  @objc optional func accessSession(_ session: BiometricFaceValidator.BTAccessSession, didTrackFace box: CoreFoundation.CGRect)
+  @objc optional func accessSession(_ session: BiometricFaceValidator.BTAccessSession, didReportDiagnostics texto: Swift.String)
+  @objc optional func accessSessionDidDenyPermission(_ session: BiometricFaceValidator.BTAccessSession, reason: Swift.String)
+}
+@objc(BTAccessSession) public class BTAccessSession : ObjectiveC.NSObject {
+  @objc public var state: BiometricFaceValidator.BTAccessState {
+    @objc get
+  }
+  @objc weak public var delegate: (any BiometricFaceValidator.BTAccessDelegate)?
+  @objc public var accessPointName: Swift.String? {
+    @objc get
+  }
+  @objc public init(config: BiometricFaceValidator.BTAccessConfig)
+  @objc public func start(in previewView: UIKit.UIView)
+  @objc public func stop()
+  @objc public func personPassed()
+  @objc deinit
+}
+extension BiometricFaceValidator.BTAccessSession : BiometricFaceValidator.ValidationCallback {
+  public func onValidationComplete(isValid: Swift.Bool, livenessConfidence: Swift.Float, message: Swift.String, faceBitmap: UIKit.UIImage?)
+  public func onFaceMatchValidationComplete(result: BiometricFaceValidator.ValidationResult)
+  public func onDocumentValidationComplete(result: BiometricFaceValidator.ValidationResult)
+  public func onError(errorMessage: Swift.String)
+  public func onWaitingForFace()
+  public func onFaceNotDetected()
+  public func onPositioningFace()
+  public func onFaceCaptured(faceBitmap: UIKit.UIImage?)
+  public func onChallengeRequested(challenge: BiometricFaceValidator.Challenge)
+  public func onChallengePassed(challenge: BiometricFaceValidator.Challenge)
+  public func onWaitingForFinalCapture()
+  public func onWaitingForOpenEyes()
+  public func onMultipleFacesDetected()
+  public func onFaceBox(_ box: CoreFoundation.CGRect)
+  public func onDiagnostics(_ texto: Swift.String)
+  public func onFaceOutsideOval()
+  public func onDocumentValidating()
+  public func onFaceNeedsCentering()
+  public func onFaceNeedsToBeCloser()
+  public func onFaceNeedsEyesOpen()
+  public func onFaceNeedsToStraighten()
+  public func onReturnToCenter()
+  public func onProcessingValidation()
 }
 public struct FaceBox {
   public let confidence: Swift.Float
@@ -453,6 +554,7 @@ extension BiometricFaceValidator.BioTrustManager {
   public func getMatchConfidence() -> Swift.Double?
   public func getPersonName() -> Swift.String?
   public func getPersonDocument() -> Swift.String?
+  public func getTransactionCode() -> Swift.Int
   public func getMatch() -> Swift.Bool?
   @objc deinit
 }
@@ -478,6 +580,12 @@ public protocol ValidationCallback : AnyObject {
   func onFaceNeedsToStraighten()
   func onReturnToCenter()
   func onProcessingValidation()
+  func onFaceBox(_ box: CoreFoundation.CGRect)
+  func onDiagnostics(_ texto: Swift.String)
+}
+extension BiometricFaceValidator.ValidationCallback {
+  public func onFaceBox(_ box: CoreFoundation.CGRect)
+  public func onDiagnostics(_ texto: Swift.String)
 }
 public enum ValidationMode : Swift.Equatable {
   case livenessOnly
@@ -521,6 +629,7 @@ public enum BrandPosition : Swift.String, Swift.CaseIterable {
     public func setThemeMode(_ theme: Swift.String?) -> BiometricFaceValidator.FaceBiometricConfig.Builder
     public func setCornerImage(_ image: UIKit.UIImage?) -> BiometricFaceValidator.FaceBiometricConfig.Builder
     public func setCornerImagePosition(_ position: BiometricFaceValidator.BrandPosition) -> BiometricFaceValidator.FaceBiometricConfig.Builder
+    public func setRequireChallengesOnCapture(_ exigir: Swift.Bool) -> BiometricFaceValidator.FaceBiometricConfig.Builder
     public func build() throws -> BiometricFaceValidator.FaceBiometricConfig
     @objc deinit
   }
@@ -553,6 +662,9 @@ extension BiometricFaceValidator.BTBrandPosition : Swift.RawRepresentable {}
 extension BiometricFaceValidator.BTDocumentType : Swift.Equatable {}
 extension BiometricFaceValidator.BTDocumentType : Swift.Hashable {}
 extension BiometricFaceValidator.BTDocumentType : Swift.RawRepresentable {}
+extension BiometricFaceValidator.BTAccessState : Swift.Equatable {}
+extension BiometricFaceValidator.BTAccessState : Swift.Hashable {}
+extension BiometricFaceValidator.BTAccessState : Swift.RawRepresentable {}
 extension BiometricFaceValidator.DocumentType : Swift.Equatable {}
 extension BiometricFaceValidator.DocumentType : Swift.Hashable {}
 extension BiometricFaceValidator.DocumentType : Swift.RawRepresentable {}

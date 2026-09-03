@@ -5121,7 +5121,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(apiUrl:uuid:locale:themeMode:)",
+            "printedName": "init(apiUrl:uuid:locale:themeMode:requireChallenges:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5170,13 +5170,20 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTFaceMatchManagerLauncher(im)initWithApiUrl:uuid:locale:themeMode:",
-            "mangledName": "$s22BiometricFaceValidator26BTFaceMatchManagerLauncherC6apiUrl4uuid6locale9themeModeACSS_S2SSgAHtcfc",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTFaceMatchManagerLauncher(im)initWithApiUrl:uuid:locale:themeMode:requireChallenges:",
+            "mangledName": "$s22BiometricFaceValidator26BTFaceMatchManagerLauncherC6apiUrl4uuid6locale9themeMode17requireChallengesACSS_S2SSgAISbtcfc",
             "moduleName": "BiometricFaceValidator",
-            "objc_name": "initWithApiUrl:uuid:locale:themeMode:",
+            "objc_name": "initWithApiUrl:uuid:locale:themeMode:requireChallenges:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -5241,6 +5248,71 @@
             "mangledName": "$s22BiometricFaceValidator26BTFaceMatchManagerLauncherC9addPerson4from4name8document0L4Type10completionySo16UIViewControllerC_S2SAA010BTDocumentM0OyAA0deF6ResultCctF",
             "moduleName": "BiometricFaceValidator",
             "objc_name": "addPersonFrom:name:document:documentType:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addPerson",
+            "printedName": "addPerson(image:name:document:documentType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTDocumentType",
+                "printedName": "BiometricFaceValidator.BTDocumentType",
+                "usr": "c:@M@BiometricFaceValidator@E@BTDocumentType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.BTFaceMatchManagerResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTFaceMatchManagerResult",
+                    "printedName": "BiometricFaceValidator.BTFaceMatchManagerResult",
+                    "usr": "c:@M@BiometricFaceValidator@objc(cs)BTFaceMatchManagerResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTFaceMatchManagerLauncher(im)addPersonWithImage:name:document:documentType:completion:",
+            "mangledName": "$s22BiometricFaceValidator26BTFaceMatchManagerLauncherC9addPerson5image4name8document0L4Type10completionySo7UIImageC_S2SAA010BTDocumentM0OyAA0deF6ResultCctF",
+            "moduleName": "BiometricFaceValidator",
+            "objc_name": "addPersonWithImage:name:document:documentType:completion:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -5564,7 +5636,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(callback:apiUrl:uuid:locale:themeMode:)",
+            "printedName": "init(callback:apiUrl:uuid:locale:themeMode:requireChallenges:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5627,11 +5699,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:22BiometricFaceValidator0B20MatchManagerLauncherC8callback6apiUrl4uuid6locale9themeModeAcA0bdE8Callback_pSg_S3SSgAKtcfc",
-            "mangledName": "$s22BiometricFaceValidator0B20MatchManagerLauncherC8callback6apiUrl4uuid6locale9themeModeAcA0bdE8Callback_pSg_S3SSgAKtcfc",
+            "usr": "s:22BiometricFaceValidator0B20MatchManagerLauncherC8callback6apiUrl4uuid6locale9themeMode17requireChallengesAcA0bdE8Callback_pSg_S3SSgALSbtcfc",
+            "mangledName": "$s22BiometricFaceValidator0B20MatchManagerLauncherC8callback6apiUrl4uuid6locale9themeMode17requireChallengesAcA0bdE8Callback_pSg_S3SSgALSbtcfc",
             "moduleName": "BiometricFaceValidator",
             "declAttributes": [
               "AccessControl"
@@ -5721,6 +5800,51 @@
             "declKind": "Func",
             "usr": "s:22BiometricFaceValidator0B20MatchManagerLauncherC10editPerson4from8uniqueId4name8documentySo16UIViewControllerC_S3StF",
             "mangledName": "$s22BiometricFaceValidator0B20MatchManagerLauncherC10editPerson4from8uniqueId4name8documentySo16UIViewControllerC_S3StF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addPerson",
+            "printedName": "addPerson(image:name:document:documentType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentType",
+                "printedName": "BiometricFaceValidator.DocumentType",
+                "usr": "s:22BiometricFaceValidator12DocumentTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator0B20MatchManagerLauncherC9addPerson5image4name8document0K4TypeySo7UIImageC_S2SAA08DocumentL0OtF",
+            "mangledName": "$s22BiometricFaceValidator0B20MatchManagerLauncherC9addPerson5image4name8document0K4TypeySo7UIImageC_S2SAA08DocumentL0OtF",
             "moduleName": "BiometricFaceValidator",
             "declAttributes": [
               "AccessControl",
@@ -5988,6 +6112,3663 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BiometricFaceValidator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ResultadoDaAnalise",
+        "printedName": "ResultadoDaAnalise",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "aprovada",
+            "printedName": "aprovada",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.ResultadoDaAnalise.Type) -> (Swift.Float) -> BiometricFaceValidator.ResultadoDaAnalise",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Float) -> BiometricFaceValidator.ResultadoDaAnalise",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResultadoDaAnalise",
+                        "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                        "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(score: Swift.Float)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.ResultadoDaAnalise.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResultadoDaAnalise",
+                        "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                        "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO8aprovadayACSf_tcACmF",
+            "mangledName": "$s22BiometricFaceValidator18ResultadoDaAnaliseO8aprovadayACSf_tcACmF",
+            "moduleName": "BiometricFaceValidator"
+          },
+          {
+            "kind": "Var",
+            "name": "semRosto",
+            "printedName": "semRosto",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.ResultadoDaAnalise.Type) -> BiometricFaceValidator.ResultadoDaAnalise",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResultadoDaAnalise",
+                    "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                    "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.ResultadoDaAnalise.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResultadoDaAnalise",
+                        "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                        "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO8semRostoyA2CmF",
+            "mangledName": "$s22BiometricFaceValidator18ResultadoDaAnaliseO8semRostoyA2CmF",
+            "moduleName": "BiometricFaceValidator"
+          },
+          {
+            "kind": "Var",
+            "name": "reprovada",
+            "printedName": "reprovada",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.ResultadoDaAnalise.Type) -> (Swift.Float, Swift.Float) -> BiometricFaceValidator.ResultadoDaAnalise",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Float, Swift.Float) -> BiometricFaceValidator.ResultadoDaAnalise",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResultadoDaAnalise",
+                        "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                        "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(score: Swift.Float, minimo: Swift.Float)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.ResultadoDaAnalise.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResultadoDaAnalise",
+                        "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                        "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO9reprovadayACSf_SftcACmF",
+            "mangledName": "$s22BiometricFaceValidator18ResultadoDaAnaliseO9reprovadayACSf_SftcACmF",
+            "moduleName": "BiometricFaceValidator"
+          },
+          {
+            "kind": "Var",
+            "name": "motorIndisponivel",
+            "printedName": "motorIndisponivel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.ResultadoDaAnalise.Type) -> BiometricFaceValidator.ResultadoDaAnalise",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResultadoDaAnalise",
+                    "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                    "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.ResultadoDaAnalise.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResultadoDaAnalise",
+                        "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                        "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO17motorIndisponivelyA2CmF",
+            "mangledName": "$s22BiometricFaceValidator18ResultadoDaAnaliseO17motorIndisponivelyA2CmF",
+            "moduleName": "BiometricFaceValidator"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO",
+        "mangledName": "$s22BiometricFaceValidator18ResultadoDaAnaliseO",
+        "moduleName": "BiometricFaceValidator",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnaliseDeImagem",
+        "printedName": "AnaliseDeImagem",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "avaliar",
+            "printedName": "avaliar(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ResultadoDaAnalise",
+                "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15AnaliseDeImagemO7avaliaryAA011ResultadoDaD0OSo7UIImageCFZ",
+            "mangledName": "$s22BiometricFaceValidator15AnaliseDeImagemO7avaliaryAA011ResultadoDaD0OSo7UIImageCFZ",
+            "moduleName": "BiometricFaceValidator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mensagem",
+            "printedName": "mensagem(para:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ResultadoDaAnalise",
+                "printedName": "BiometricFaceValidator.ResultadoDaAnalise",
+                "usr": "s:22BiometricFaceValidator18ResultadoDaAnaliseO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15AnaliseDeImagemO8mensagem4paraSSSgAA011ResultadoDaD0O_tFZ",
+            "mangledName": "$s22BiometricFaceValidator15AnaliseDeImagemO8mensagem4paraSSSgAA011ResultadoDaD0O_tFZ",
+            "moduleName": "BiometricFaceValidator",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22BiometricFaceValidator15AnaliseDeImagemO",
+        "mangledName": "$s22BiometricFaceValidator15AnaliseDeImagemO",
+        "moduleName": "BiometricFaceValidator",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BiometricFaceValidator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTAccessState",
+        "printedName": "BTAccessState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "parada",
+            "printedName": "parada",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.BTAccessState.Type) -> BiometricFaceValidator.BTAccessState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAccessState",
+                    "printedName": "BiometricFaceValidator.BTAccessState",
+                    "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.BTAccessState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTAccessState",
+                        "printedName": "BiometricFaceValidator.BTAccessState",
+                        "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@BiometricFaceValidator@E@BTAccessState@BTAccessStateParada",
+            "mangledName": "$s22BiometricFaceValidator13BTAccessStateO6paradayA2CmF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "vigilia",
+            "printedName": "vigilia",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.BTAccessState.Type) -> BiometricFaceValidator.BTAccessState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAccessState",
+                    "printedName": "BiometricFaceValidator.BTAccessState",
+                    "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.BTAccessState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTAccessState",
+                        "printedName": "BiometricFaceValidator.BTAccessState",
+                        "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@BiometricFaceValidator@E@BTAccessState@BTAccessStateVigilia",
+            "mangledName": "$s22BiometricFaceValidator13BTAccessStateO7vigiliayA2CmF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "procurando",
+            "printedName": "procurando",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.BTAccessState.Type) -> BiometricFaceValidator.BTAccessState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAccessState",
+                    "printedName": "BiometricFaceValidator.BTAccessState",
+                    "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.BTAccessState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTAccessState",
+                        "printedName": "BiometricFaceValidator.BTAccessState",
+                        "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@BiometricFaceValidator@E@BTAccessState@BTAccessStateProcurando",
+            "mangledName": "$s22BiometricFaceValidator13BTAccessStateO10procurandoyA2CmF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "liberada",
+            "printedName": "liberada",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.BTAccessState.Type) -> BiometricFaceValidator.BTAccessState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAccessState",
+                    "printedName": "BiometricFaceValidator.BTAccessState",
+                    "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.BTAccessState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTAccessState",
+                        "printedName": "BiometricFaceValidator.BTAccessState",
+                        "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@BiometricFaceValidator@E@BTAccessState@BTAccessStateLiberada",
+            "mangledName": "$s22BiometricFaceValidator13BTAccessStateO8liberadayA2CmF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "bloqueada",
+            "printedName": "bloqueada",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BiometricFaceValidator.BTAccessState.Type) -> BiometricFaceValidator.BTAccessState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAccessState",
+                    "printedName": "BiometricFaceValidator.BTAccessState",
+                    "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BiometricFaceValidator.BTAccessState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTAccessState",
+                        "printedName": "BiometricFaceValidator.BTAccessState",
+                        "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@BiometricFaceValidator@E@BTAccessState@BTAccessStateBloqueada",
+            "mangledName": "$s22BiometricFaceValidator13BTAccessStateO9bloqueadayA2CmF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BiometricFaceValidator.BTAccessState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAccessState",
+                    "printedName": "BiometricFaceValidator.BTAccessState",
+                    "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22BiometricFaceValidator13BTAccessStateO8rawValueACSgSi_tcfc",
+            "mangledName": "$s22BiometricFaceValidator13BTAccessStateO8rawValueACSgSi_tcfc",
+            "moduleName": "BiometricFaceValidator",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator13BTAccessStateO8rawValueSivp",
+            "mangledName": "$s22BiometricFaceValidator13BTAccessStateO8rawValueSivp",
+            "moduleName": "BiometricFaceValidator",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator13BTAccessStateO8rawValueSivg",
+                "mangledName": "$s22BiometricFaceValidator13BTAccessStateO8rawValueSivg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@BiometricFaceValidator@E@BTAccessState",
+        "mangledName": "$s22BiometricFaceValidator13BTAccessStateO",
+        "moduleName": "BiometricFaceValidator",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTAccessPolicy",
+        "printedName": "BTAccessPolicy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accessPointId",
+            "printedName": "accessPointId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV13accessPointIdSivp",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV13accessPointIdSivp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV13accessPointIdSivg",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV13accessPointIdSivg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV4nameSSvp",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV4nameSSvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV4nameSSvg",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV4nameSSvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "revokeOnMismatch",
+            "printedName": "revokeOnMismatch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV16revokeOnMismatchSbvp",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV16revokeOnMismatchSbvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV16revokeOnMismatchSbvg",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV16revokeOnMismatchSbvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "releaseWindowSeconds",
+            "printedName": "releaseWindowSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV20releaseWindowSecondsSivp",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV20releaseWindowSecondsSivp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV20releaseWindowSecondsSivg",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV20releaseWindowSecondsSivg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknownCooldownSeconds",
+            "printedName": "unknownCooldownSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV22unknownCooldownSecondsSivp",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV22unknownCooldownSecondsSivp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV22unknownCooldownSecondsSivg",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV22unknownCooldownSecondsSivg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "idleSeconds",
+            "printedName": "idleSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV11idleSecondsSivp",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV11idleSecondsSivp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV11idleSecondsSivg",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV11idleSecondsSivg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "watchForFace",
+            "printedName": "watchForFace",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV08watchForB0Sbvp",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV08watchForB0Sbvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV08watchForB0Sbvg",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV08watchForB0Sbvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "restrictedAccess",
+            "printedName": "restrictedAccess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV16restrictedAccessSbvp",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV16restrictedAccessSbvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV16restrictedAccessSbvg",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV16restrictedAccessSbvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessPolicy",
+                "printedName": "BiometricFaceValidator.BTAccessPolicy",
+                "usr": "s:22BiometricFaceValidator14BTAccessPolicyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BiometricFaceValidator",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator14BTAccessPolicyV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BiometricFaceValidator",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22BiometricFaceValidator14BTAccessPolicyV",
+        "mangledName": "$s22BiometricFaceValidator14BTAccessPolicyV",
+        "moduleName": "BiometricFaceValidator",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTAccessConfig",
+        "printedName": "BTAccessConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apiUrl",
+            "printedName": "apiUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)apiUrl",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC6apiUrlSSvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)apiUrl",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC6apiUrlSSvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setApiUrl:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC6apiUrlSSvs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC6apiUrlSSvM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC6apiUrlSSvM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)uuid",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC4uuidSSvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)uuid",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC4uuidSSvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setUuid:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC4uuidSSvs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC4uuidSSvM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC4uuidSSvM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useFrontCamera",
+            "printedName": "useFrontCamera",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)useFrontCamera",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC14useFrontCameraSbvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)useFrontCamera",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC14useFrontCameraSbvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setUseFrontCamera:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC14useFrontCameraSbvs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC14useFrontCameraSbvM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC14useFrontCameraSbvM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "revokeOnMismatch",
+            "printedName": "revokeOnMismatch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)revokeOnMismatch",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC16revokeOnMismatchSbvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)revokeOnMismatch",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC16revokeOnMismatchSbvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setRevokeOnMismatch:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC16revokeOnMismatchSbvs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC16revokeOnMismatchSbvM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC16revokeOnMismatchSbvM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "releaseWindowSeconds",
+            "printedName": "releaseWindowSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)releaseWindowSeconds",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC20releaseWindowSecondsSivp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)releaseWindowSeconds",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC20releaseWindowSecondsSivg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setReleaseWindowSeconds:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC20releaseWindowSecondsSivs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC20releaseWindowSecondsSivM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC20releaseWindowSecondsSivM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknownCooldownSeconds",
+            "printedName": "unknownCooldownSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)unknownCooldownSeconds",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC22unknownCooldownSecondsSivp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)unknownCooldownSeconds",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC22unknownCooldownSecondsSivg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setUnknownCooldownSeconds:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC22unknownCooldownSecondsSivs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC22unknownCooldownSecondsSivM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC22unknownCooldownSecondsSivM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "idleSeconds",
+            "printedName": "idleSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)idleSeconds",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC11idleSecondsSivp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)idleSeconds",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC11idleSecondsSivg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setIdleSeconds:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC11idleSecondsSivs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC11idleSecondsSivM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC11idleSecondsSivM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "watchForFace",
+            "printedName": "watchForFace",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)watchForFace",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC08watchForB0Sbvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)watchForFace",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC08watchForB0Sbvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setWatchForFace:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC08watchForB0Sbvs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC08watchForB0SbvM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC08watchForB0SbvM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "terminalLabel",
+            "printedName": "terminalLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)terminalLabel",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC13terminalLabelSSSgvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)terminalLabel",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC13terminalLabelSSSgvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setTerminalLabel:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC13terminalLabelSSSgvs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC13terminalLabelSSSgvM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC13terminalLabelSSSgvM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useServerPolicy",
+            "printedName": "useServerPolicy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(py)useServerPolicy",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC15useServerPolicySbvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)useServerPolicy",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC15useServerPolicySbvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)setUseServerPolicy:",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC15useServerPolicySbvs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator14BTAccessConfigC15useServerPolicySbvM",
+                "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC15useServerPolicySbvM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessConfig",
+                "printedName": "BiometricFaceValidator.BTAccessConfig",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig(im)init",
+            "mangledName": "$s22BiometricFaceValidator14BTAccessConfigCACycfc",
+            "moduleName": "BiometricFaceValidator",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig",
+        "mangledName": "$s22BiometricFaceValidator14BTAccessConfigC",
+        "moduleName": "BiometricFaceValidator",
+        "objc_name": "BTAccessConfig",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTAccessDelegate",
+        "printedName": "BTAccessDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "accessSession",
+            "printedName": "accessSession(_:didChangeState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessState",
+                "printedName": "BiometricFaceValidator.BTAccessState",
+                "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSession:didChangeState:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP13accessSession_14didChangeStateyAA0dG0C_AA0dJ0OtF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSession",
+            "printedName": "accessSession(_:didDetectPresence:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSession:didDetectPresence:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP13accessSession_17didDetectPresenceyAA0dG0C_SbtF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSession",
+            "printedName": "accessSession(_:didAuthorize:name:document:confidence:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSession:didAuthorize:name:document:confidence:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP13accessSession_12didAuthorize4name8document10confidenceyAA0dG0C_S3SSdtF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSessionDidRevoke",
+            "printedName": "accessSessionDidRevoke(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSessionDidRevoke:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP22accessSessionDidRevokeyyAA0dG0CF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSessionDidFindUnknown",
+            "printedName": "accessSessionDidFindUnknown(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSessionDidFindUnknown:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP27accessSessionDidFindUnknownyyAA0dG0CF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSession",
+            "printedName": "accessSession(_:didDeny:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSession:didDeny:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP13accessSession_7didDenyyAA0dG0C_SStF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSessionDidBecomeIdle",
+            "printedName": "accessSessionDidBecomeIdle(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSessionDidBecomeIdle:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP26accessSessionDidBecomeIdleyyAA0dG0CF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSession",
+            "printedName": "accessSession(_:didTrackFace:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSession:didTrackFace:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP13accessSession_08didTrackB0yAA0dG0C_So6CGRectVtF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSession",
+            "printedName": "accessSession(_:didReportDiagnostics:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSession:didReportDiagnostics:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP13accessSession_20didReportDiagnosticsyAA0dG0C_SStF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessSessionDidDenyPermission",
+            "printedName": "accessSessionDidDenyPermission(_:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate(im)accessSessionDidDenyPermission:reason:",
+            "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP30accessSessionDidDenyPermission_6reasonyAA0dG0C_SStF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.BTAccessDelegate>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.BTAccessDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate",
+        "mangledName": "$s22BiometricFaceValidator16BTAccessDelegateP",
+        "moduleName": "BiometricFaceValidator",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "BTAccessDelegate",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BTAccessSession",
+        "printedName": "BTAccessSession",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessState",
+                "printedName": "BiometricFaceValidator.BTAccessState",
+                "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(py)state",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC5stateAA0D5StateOvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BTAccessState",
+                    "printedName": "BiometricFaceValidator.BTAccessState",
+                    "usr": "c:@M@BiometricFaceValidator@E@BTAccessState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)state",
+                "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC5stateAA0D5StateOvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any BiometricFaceValidator.BTAccessDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(py)delegate",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC8delegateAA0D8Delegate_pSgvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BiometricFaceValidator.BTAccessDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTAccessDelegate",
+                        "printedName": "any BiometricFaceValidator.BTAccessDelegate",
+                        "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)delegate",
+                "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC8delegateAA0D8Delegate_pSgvg",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BiometricFaceValidator.BTAccessDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BTAccessDelegate",
+                        "printedName": "any BiometricFaceValidator.BTAccessDelegate",
+                        "usr": "c:@M@BiometricFaceValidator@objc(pl)BTAccessDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)setDelegate:",
+                "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC8delegateAA0D8Delegate_pSgvs",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BiometricFaceValidator15BTAccessSessionC8delegateAA0D8Delegate_pSgvM",
+                "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC8delegateAA0D8Delegate_pSgvM",
+                "moduleName": "BiometricFaceValidator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessPointName",
+            "printedName": "accessPointName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(py)accessPointName",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC15accessPointNameSSSgvp",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)accessPointName",
+                "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC15accessPointNameSSSgvg",
+                "moduleName": "BiometricFaceValidator",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessConfig",
+                "printedName": "BiometricFaceValidator.BTAccessConfig",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)initWithConfig:",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC6configAcA0D6ConfigC_tcfc",
+            "moduleName": "BiometricFaceValidator",
+            "objc_name": "initWithConfig:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)startIn:",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC5start2inySo6UIViewC_tF",
+            "moduleName": "BiometricFaceValidator",
+            "objc_name": "startIn:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)stop",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC4stopyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "personPassed",
+            "printedName": "personPassed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)personPassed",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC12personPassedyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTAccessSession",
+                "printedName": "BiometricFaceValidator.BTAccessSession",
+                "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession(im)init",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionCACycfc",
+            "moduleName": "BiometricFaceValidator",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "onValidationComplete",
+            "printedName": "onValidationComplete(isValid:livenessConfidence:message:faceBitmap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC20onValidationComplete7isValid18livenessConfidence7message10faceBitmapySb_SfSSSo7UIImageCSgtF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC20onValidationComplete7isValid18livenessConfidence7message10faceBitmapySb_SfSSSo7UIImageCSgtF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceMatchValidationComplete",
+            "printedName": "onFaceMatchValidationComplete(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ValidationResult",
+                "printedName": "BiometricFaceValidator.ValidationResult",
+                "usr": "s:22BiometricFaceValidator16ValidationResultC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB23MatchValidationComplete6resultyAA0H6ResultC_tF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB23MatchValidationComplete6resultyAA0H6ResultC_tF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDocumentValidationComplete",
+            "printedName": "onDocumentValidationComplete(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ValidationResult",
+                "printedName": "BiometricFaceValidator.ValidationResult",
+                "usr": "s:22BiometricFaceValidator16ValidationResultC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC28onDocumentValidationComplete6resultyAA0H6ResultC_tF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC28onDocumentValidationComplete6resultyAA0H6ResultC_tF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(errorMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC7onError12errorMessageySS_tF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC7onError12errorMessageySS_tF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onWaitingForFace",
+            "printedName": "onWaitingForFace()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC012onWaitingForB0yyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC012onWaitingForB0yyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceNotDetected",
+            "printedName": "onFaceNotDetected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB11NotDetectedyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB11NotDetectedyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onPositioningFace",
+            "printedName": "onPositioningFace()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC013onPositioningB0yyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC013onPositioningB0yyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceCaptured",
+            "printedName": "onFaceCaptured(faceBitmap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB8Captured10faceBitmapySo7UIImageCSg_tF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB8Captured10faceBitmapySo7UIImageCSg_tF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onChallengeRequested",
+            "printedName": "onChallengeRequested(challenge:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Challenge",
+                "printedName": "BiometricFaceValidator.Challenge",
+                "usr": "s:22BiometricFaceValidator9ChallengeC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC20onChallengeRequested9challengeyAA0G0C_tF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC20onChallengeRequested9challengeyAA0G0C_tF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onChallengePassed",
+            "printedName": "onChallengePassed(challenge:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Challenge",
+                "printedName": "BiometricFaceValidator.Challenge",
+                "usr": "s:22BiometricFaceValidator9ChallengeC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC17onChallengePassed9challengeyAA0G0C_tF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC17onChallengePassed9challengeyAA0G0C_tF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onWaitingForFinalCapture",
+            "printedName": "onWaitingForFinalCapture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC24onWaitingForFinalCaptureyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC24onWaitingForFinalCaptureyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onWaitingForOpenEyes",
+            "printedName": "onWaitingForOpenEyes()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC20onWaitingForOpenEyesyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC20onWaitingForOpenEyesyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onMultipleFacesDetected",
+            "printedName": "onMultipleFacesDetected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC23onMultipleFacesDetectedyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC23onMultipleFacesDetectedyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceBox",
+            "printedName": "onFaceBox(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB3BoxyySo6CGRectVF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB3BoxyySo6CGRectVF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDiagnostics",
+            "printedName": "onDiagnostics(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC13onDiagnosticsyySSF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC13onDiagnosticsyySSF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceOutsideOval",
+            "printedName": "onFaceOutsideOval()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB11OutsideOvalyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB11OutsideOvalyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDocumentValidating",
+            "printedName": "onDocumentValidating()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC20onDocumentValidatingyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC20onDocumentValidatingyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceNeedsCentering",
+            "printedName": "onFaceNeedsCentering()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB14NeedsCenteringyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB14NeedsCenteringyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceNeedsToBeCloser",
+            "printedName": "onFaceNeedsToBeCloser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB15NeedsToBeCloseryyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB15NeedsToBeCloseryyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceNeedsEyesOpen",
+            "printedName": "onFaceNeedsEyesOpen()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB13NeedsEyesOpenyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB13NeedsEyesOpenyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceNeedsToStraighten",
+            "printedName": "onFaceNeedsToStraighten()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC02onB17NeedsToStraightenyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC02onB17NeedsToStraightenyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onReturnToCenter",
+            "printedName": "onReturnToCenter()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC16onReturnToCenteryyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC16onReturnToCenteryyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onProcessingValidation",
+            "printedName": "onProcessingValidation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator15BTAccessSessionC22onProcessingValidationyyF",
+            "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC22onProcessingValidationyyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BiometricFaceValidator@objc(cs)BTAccessSession",
+        "mangledName": "$s22BiometricFaceValidator15BTAccessSessionC",
+        "moduleName": "BiometricFaceValidator",
+        "objc_name": "BTAccessSession",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ValidationCallback",
+            "printedName": "ValidationCallback",
+            "usr": "s:22BiometricFaceValidator18ValidationCallbackP",
+            "mangledName": "$s22BiometricFaceValidator18ValidationCallbackP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BiometricFaceValidator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BiometricFaceValidator"
       },
       {
         "kind": "Import",
@@ -16336,6 +20117,27 @@
           },
           {
             "kind": "Function",
+            "name": "getTransactionCode",
+            "printedName": "getTransactionCode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator16ValidationResultC18getTransactionCodeSiyF",
+            "mangledName": "$s22BiometricFaceValidator16ValidationResultC18getTransactionCodeSiyF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getMatch",
             "printedName": "getMatch()",
             "children": [
@@ -16951,6 +20753,121 @@
             "sugared_genericSig": "<Self where Self : BiometricFaceValidator.ValidationCallback>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceBox",
+            "printedName": "onFaceBox(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator18ValidationCallbackP02onB3BoxyySo6CGRectVF",
+            "mangledName": "$s22BiometricFaceValidator18ValidationCallbackP02onB3BoxyySo6CGRectVF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.ValidationCallback>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.ValidationCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDiagnostics",
+            "printedName": "onDiagnostics(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator18ValidationCallbackP13onDiagnosticsyySSF",
+            "mangledName": "$s22BiometricFaceValidator18ValidationCallbackP13onDiagnosticsyySSF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.ValidationCallback>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.ValidationCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceBox",
+            "printedName": "onFaceBox(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator18ValidationCallbackPAAE02onB3BoxyySo6CGRectVF",
+            "mangledName": "$s22BiometricFaceValidator18ValidationCallbackPAAE02onB3BoxyySo6CGRectVF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.ValidationCallback>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.ValidationCallback>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDiagnostics",
+            "printedName": "onDiagnostics(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator18ValidationCallbackPAAE13onDiagnosticsyySSF",
+            "mangledName": "$s22BiometricFaceValidator18ValidationCallbackPAAE13onDiagnosticsyySSF",
+            "moduleName": "BiometricFaceValidator",
+            "genericSig": "<τ_0_0 where τ_0_0 : BiometricFaceValidator.ValidationCallback>",
+            "sugared_genericSig": "<Self where Self : BiometricFaceValidator.ValidationCallback>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -18151,6 +22068,34 @@
               },
               {
                 "kind": "Function",
+                "name": "setRequireChallengesOnCapture",
+                "printedName": "setRequireChallengesOnCapture(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BiometricFaceValidator.FaceBiometricConfig.Builder",
+                    "usr": "s:22BiometricFaceValidator0bA6ConfigC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:22BiometricFaceValidator0bA6ConfigC7BuilderC29setRequireChallengesOnCaptureyAESbF",
+                "mangledName": "$s22BiometricFaceValidator0bA6ConfigC7BuilderC29setRequireChallengesOnCaptureyAESbF",
+                "moduleName": "BiometricFaceValidator",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
                 "name": "build",
                 "printedName": "build()",
                 "children": [
@@ -18933,18 +22878,179 @@
       "value": "false"
     },
     {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15134,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "BooleanLiteral",
-      "offset": 2085,
+      "offset": 2381,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2626,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "IntegerLiteral",
-      "offset": 8269,
+      "offset": 10851,
       "length": 2,
       "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 289,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 393,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 472,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 560,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "StringLiteral",
+      "offset": 1906,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "StringLiteral",
+      "offset": 1945,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1992,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2325,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2648,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2963,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3086,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3222,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3782,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8993,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9303,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9898,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18047,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28957,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/TerminalCredential.swift",
+      "kind": "StringLiteral",
+      "offset": 1492,
+      "length": 24,
+      "value": "\"biotrust.terminalToken\""
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/TerminalCredential.swift",
+      "kind": "StringLiteral",
+      "offset": 1558,
+      "length": 25,
+      "value": "\"biotrust.terminalPolicy\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/engine\/FaceDetectionFramework.swift",
@@ -19158,218 +23264,225 @@
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1629,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1694,
+      "offset": 1836,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1738,
+      "offset": 1880,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1784,
+      "offset": 1926,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1834,
+      "offset": 1976,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1905,
+      "offset": 2047,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1949,
+      "offset": 2091,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1992,
+      "offset": 2134,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2057,
+      "offset": 2199,
       "length": 15,
       "value": "\"error_message\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2112,
+      "offset": 2254,
       "length": 17,
       "value": "\"success_message\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2164,
+      "offset": 2306,
       "length": 12,
       "value": "\"face_image\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2213,
+      "offset": 2355,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2258,
+      "offset": 2400,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2301,
+      "offset": 2443,
       "length": 12,
       "value": "\"theme_mode\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2404,
+      "offset": 2546,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2442,
+      "offset": 2584,
       "length": 9,
       "value": "\"api_url\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2491,
+      "offset": 2633,
       "length": 17,
       "value": "\"validation_mode\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2545,
+      "offset": 2687,
       "length": 14,
       "value": "\"document_cpf\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2603,
+      "offset": 2745,
       "length": 21,
       "value": "\"document_birth_date\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2721,
+      "offset": 2863,
       "length": 17,
       "value": "\"document_result\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2779,
+      "offset": 2921,
       "length": 18,
       "value": "\"document_success\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2841,
+      "offset": 2983,
       "length": 21,
       "value": "\"document_similarity\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2905,
+      "offset": 3047,
       "length": 20,
       "value": "\"document_full_name\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2970,
+      "offset": 3112,
       "length": 22,
       "value": "\"document_probability\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3035,
+      "offset": 3177,
       "length": 20,
       "value": "\"document_available\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3099,
+      "offset": 3241,
       "length": 21,
       "value": "\"liveness_confidence\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3166,
+      "offset": 3308,
       "length": 18,
       "value": "\"facematch_result\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3228,
+      "offset": 3370,
       "length": 21,
       "value": "\"facematch_unique_id\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3294,
+      "offset": 3436,
       "length": 22,
       "value": "\"facematch_similarity\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3360,
+      "offset": 3502,
       "length": 21,
       "value": "\"facematch_full_name\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3424,
+      "offset": 3566,
       "length": 20,
       "value": "\"facematch_document\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BiometricValidationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3484,
+      "offset": 3626,
       "length": 17,
       "value": "\"facematch_match\""
     },
@@ -20095,6 +24208,20 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/SessionCrypto.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2062,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/model\/ValidationResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1474,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Dictionary",
       "offset": 578,
@@ -20111,476 +24238,504 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 3247,
+      "offset": 4224,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3291,
+      "offset": 4268,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 3379,
+      "offset": 4356,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3491,
+      "offset": 4468,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3545,
+      "offset": 4522,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3898,
+      "offset": 4875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 7282,
+      "offset": 8259,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 7336,
+      "offset": 8313,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 7374,
+      "offset": 8351,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 7453,
+      "offset": 8430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 7493,
+      "offset": 8470,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 9327,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 7896,
+      "offset": 9778,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 7939,
+      "offset": 9821,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8051,
+      "offset": 9933,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8103,
+      "offset": 9985,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 8283,
+      "offset": 10165,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8328,
+      "offset": 10210,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8376,
+      "offset": 10258,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 8524,
+      "offset": 10406,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8686,
+      "offset": 10568,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 8742,
+      "offset": 10624,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 9249,
+      "offset": 11131,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 9351,
+      "offset": 11233,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 9531,
+      "offset": 11413,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "StringLiteral",
-      "offset": 9731,
+      "offset": 11613,
       "length": 14,
       "value": "\"camera.queue\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 9869,
+      "offset": 11751,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 9914,
+      "offset": 11796,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 9965,
+      "offset": 11847,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10012,
+      "offset": 11894,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10091,
+      "offset": 11973,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10129,
+      "offset": 12011,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 10173,
+      "offset": 12055,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Dictionary",
-      "offset": 10280,
+      "offset": 12162,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10313,
+      "offset": 12195,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10356,
+      "offset": 12238,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10400,
+      "offset": 12282,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10444,
+      "offset": 12326,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10484,
+      "offset": 12366,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 10529,
+      "offset": 12411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10571,
+      "offset": 12453,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10612,
+      "offset": 12494,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 10710,
+      "offset": 12592,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 10785,
+      "offset": 12667,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10838,
+      "offset": 12720,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 10884,
+      "offset": 12766,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10928,
+      "offset": 12810,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10980,
+      "offset": 12862,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11029,
+      "offset": 12911,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11076,
+      "offset": 12958,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11272,
+      "offset": 13154,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11321,
+      "offset": 13203,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 11369,
+      "offset": 13251,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11415,
+      "offset": 13297,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 11541,
+      "offset": 13423,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11583,
+      "offset": 13465,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11688,
+      "offset": 13570,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11866,
+      "offset": 13748,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 13009,
+      "offset": 14891,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13093,
+      "offset": 14975,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13142,
+      "offset": 15024,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13266,
+      "offset": 15148,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13321,
+      "offset": 15203,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 13437,
+      "offset": 15319,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 13504,
+      "offset": 15386,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 23457,
+      "offset": 25339,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 55635,
+      "offset": 26234,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26696,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26955,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 71936,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 87564,
+      "offset": 104245,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 87604,
+      "offset": 104285,
       "length": 1,
       "value": "3"
     },
@@ -20615,37 +24770,44 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2273,
+      "offset": 2831,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2324,
+      "offset": 2882,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2386,
+      "offset": 2944,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2440,
+      "offset": 2998,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2495,
+      "offset": 3053,
       "length": 5,
       "value": "30000"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3527,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/model\/Challenge.swift",
