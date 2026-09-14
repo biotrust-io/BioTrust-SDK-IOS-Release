@@ -299,6 +299,12 @@ public struct BioTrustSession : Swift.Codable {
   public var uuid: Swift.String?
   public var apiUrl: Swift.String?
   public func GetAccessToken() async -> (Swift.String, Swift.Bool)
+  public enum ResultadoDeSessao {
+    case aberta(BiometricFaceValidator.BioTrustSession)
+    case servidorSemSuporte
+    case indisponivel
+  }
+  public func StartSessionResult(accessToken: Swift.String, challengeCount: Swift.Int? = nil) async -> BiometricFaceValidator.AuthService.ResultadoDeSessao
   public func StartSession(accessToken: Swift.String, challengeCount: Swift.Int? = nil) async -> BiometricFaceValidator.BioTrustSession?
   @objc deinit
 }

@@ -11327,6 +11327,204 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "TypeDecl",
+            "name": "ResultadoDeSessao",
+            "printedName": "ResultadoDeSessao",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "aberta",
+                "printedName": "aberta",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BiometricFaceValidator.AuthService.ResultadoDeSessao.Type) -> (BiometricFaceValidator.BioTrustSession) -> BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(BiometricFaceValidator.BioTrustSession) -> BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ResultadoDeSessao",
+                            "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                            "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BioTrustSession",
+                            "printedName": "BiometricFaceValidator.BioTrustSession",
+                            "usr": "s:22BiometricFaceValidator15BioTrustSessionV"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ResultadoDeSessao",
+                            "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                            "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO6abertayAeA15BioTrustSessionVcAEmF",
+                "mangledName": "$s22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO6abertayAeA15BioTrustSessionVcAEmF",
+                "moduleName": "BiometricFaceValidator"
+              },
+              {
+                "kind": "Var",
+                "name": "servidorSemSuporte",
+                "printedName": "servidorSemSuporte",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BiometricFaceValidator.AuthService.ResultadoDeSessao.Type) -> BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResultadoDeSessao",
+                        "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                        "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ResultadoDeSessao",
+                            "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                            "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO18servidorSemSuporteyA2EmF",
+                "mangledName": "$s22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO18servidorSemSuporteyA2EmF",
+                "moduleName": "BiometricFaceValidator"
+              },
+              {
+                "kind": "Var",
+                "name": "indisponivel",
+                "printedName": "indisponivel",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BiometricFaceValidator.AuthService.ResultadoDeSessao.Type) -> BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResultadoDeSessao",
+                        "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                        "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ResultadoDeSessao",
+                            "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                            "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO12indisponivelyA2EmF",
+                "mangledName": "$s22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO12indisponivelyA2EmF",
+                "moduleName": "BiometricFaceValidator"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO",
+            "mangledName": "$s22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "StartSessionResult",
+            "printedName": "StartSessionResult(accessToken:challengeCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ResultadoDeSessao",
+                "printedName": "BiometricFaceValidator.AuthService.ResultadoDeSessao",
+                "usr": "s:22BiometricFaceValidator11AuthServiceC17ResultadoDeSessaoO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BiometricFaceValidator11AuthServiceC18StartSessionResult11accessToken14challengeCountAC17ResultadoDeSessaoOSS_SiSgtYaF",
+            "mangledName": "$s22BiometricFaceValidator11AuthServiceC18StartSessionResult11accessToken14challengeCountAC17ResultadoDeSessaoOSS_SiSgtYaF",
+            "moduleName": "BiometricFaceValidator",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "StartSession",
             "printedName": "StartSession(accessToken:challengeCount:)",
@@ -23083,84 +23281,84 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7719,
+      "offset": 7722,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7733,
+      "offset": 7736,
       "length": 1,
       "value": "\" v\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7745,
+      "offset": 7748,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7761,
+      "offset": 7764,
       "length": 1,
       "value": "\") - \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7784,
+      "offset": 7787,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8751,
+      "offset": 8754,
       "length": 187,
       "value": "\"Device ID: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8785,
+      "offset": 8788,
       "length": 3,
       "value": "\"\nSDK Version: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8820,
+      "offset": 8823,
       "length": 2,
       "value": "\"\nOS: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8851,
+      "offset": 8854,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8868,
+      "offset": 8871,
       "length": 5,
       "value": "\"\nModel: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8898,
+      "offset": 8901,
       "length": 4,
       "value": "\"\nName: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8926,
+      "offset": 8929,
       "length": 1290,
       "value": "\"\""
     },
@@ -24693,49 +24891,56 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 25339,
+      "offset": 26466,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 26234,
+      "offset": 27361,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 26696,
+      "offset": 27823,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 26955,
+      "offset": 28082,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 71936,
+      "offset": 30005,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 74909,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 104245,
+      "offset": 107218,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 104285,
+      "offset": 107258,
       "length": 1,
       "value": "3"
     },
