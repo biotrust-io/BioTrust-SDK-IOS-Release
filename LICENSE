@@ -1,0 +1,65 @@
+LICENÇA DE USO DO SDK BIOTRUST
+
+Copyright (c) 2026 i-Stream Comércio e Serviços On Line Ltda. Todos os direitos reservados.
+
+Este software, incluindo bibliotecas, binários, código, documentação e demais arquivos que o
+acompanham (o "SDK"), é de propriedade exclusiva da i-Stream Comércio e Serviços On Line Ltda.
+("Licenciante"), titular da marca BioTrust, e é protegido pela legislação de direitos autorais e
+de programas de computador (Leis nº 9.609/1998 e nº 9.610/1998) e por tratados internacionais.
+
+1. LICENÇA
+
+1.1. Mediante contrato comercial vigente com o Licenciante e credenciais válidas de acesso aos
+serviços BioTrust, o Licenciante concede ao cliente ("Licenciado") uma licença limitada, não
+exclusiva, intransferível, não sublicenciável e revogável para:
+
+  a) usar o SDK exclusivamente para integrar aplicativos do próprio Licenciado aos serviços
+     BioTrust; e
+  b) distribuir o SDK, em forma binária e sem alterações, somente como parte integrante desses
+     aplicativos, destinados aos seus usuários finais.
+
+1.2. Nenhum outro direito é concedido, expressa ou implicitamente.
+
+2. RESTRIÇÕES
+
+Salvo autorização prévia e por escrito do Licenciante, é vedado:
+
+  a) copiar o SDK, no todo ou em parte, além do necessário para a integração prevista no item 1;
+  b) modificar, adaptar, traduzir ou criar obras derivadas do SDK;
+  c) descompilar, desmontar, aplicar engenharia reversa ou tentar obter o código-fonte do SDK,
+     ressalvado o que a lei aplicável permitir expressamente;
+  d) distribuir, publicar, vender, alugar, emprestar, sublicenciar ou disponibilizar o SDK a
+     terceiros de forma isolada, como biblioteca ou como parte de outro SDK, framework ou
+     ferramenta de desenvolvimento;
+  e) remover ou alterar avisos de direitos autorais, marcas ou desta licença;
+  f) usar o SDK sem credenciais válidas, contornar mecanismos de segurança ou de licenciamento,
+     ou utilizá-lo para desenvolver produto ou serviço concorrente.
+
+3. PROPRIEDADE
+
+O SDK é licenciado, e não vendido. Todos os direitos não concedidos expressamente nesta licença
+permanecem com o Licenciante.
+
+4. COMPONENTES DE TERCEIROS
+
+O SDK pode incluir componentes de terceiros, regidos por suas próprias licenças, que prevalecem
+sobre esta quanto a esses componentes.
+
+5. ENCERRAMENTO
+
+Esta licença termina automaticamente com o encerramento do contrato comercial ou com o
+descumprimento de qualquer de seus termos. No encerramento, o Licenciado deve cessar o uso do SDK
+e excluir todas as cópias em seu poder.
+
+6. GARANTIA E RESPONSABILIDADE
+
+O SDK é fornecido no estado em que se encontra, sem garantias além das previstas no contrato
+comercial. Na extensão máxima permitida em lei, o Licenciante não responde por danos indiretos,
+lucros cessantes ou perda de dados decorrentes do uso do SDK.
+
+7. LEI APLICÁVEL E FORO
+
+Esta licença é regida pelas leis da República Federativa do Brasil. Fica eleito o foro da
+comarca da sede do Licenciante para dirimir quaisquer controvérsias dela decorrentes.
+
+Contato: cloud@biotrust.io
