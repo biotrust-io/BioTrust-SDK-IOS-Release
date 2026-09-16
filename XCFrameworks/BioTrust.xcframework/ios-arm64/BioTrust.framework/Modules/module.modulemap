@@ -1,0 +1,13 @@
+framework module BioTrust {
+  umbrella header "BioTrust.h"
+  
+  export *
+  module * { export * }
+  
+  link framework "OpenSSL"
+}
+
+module BioTrust.Swift {
+  header "BioTrust-Swift.h"
+  requires objc
+}

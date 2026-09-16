@@ -1,0 +1,8 @@
+framework module BioTrust {
+  umbrella header "BioTrust.h"
+  
+  export *
+  module * { export * }
+  
+  link framework "OpenSSL"
+}
