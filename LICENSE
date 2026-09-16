@@ -1,4 +1,5 @@
 LICENÇA DE USO DO SDK BIOTRUST
+(English version below — free translation; the Portuguese version prevails.)
 
 Copyright (c) 2026 i-Stream Comércio e Serviços On Line Ltda. Todos os direitos reservados.
 
@@ -63,3 +64,78 @@ Esta licença é regida pelas leis da República Federativa do Brasil. Fica elei
 comarca da sede do Licenciante para dirimir quaisquer controvérsias dela decorrentes.
 
 Contato: cloud@biotrust.io
+
+
+================================================================================
+
+
+BIOTRUST SDK LICENSE AGREEMENT
+
+This is a free translation of the Portuguese original above, provided for convenience only.
+In case of any discrepancy between the two versions, the Portuguese version prevails.
+
+Copyright (c) 2026 i-Stream Comércio e Serviços On Line Ltda. All rights reserved.
+
+This software, including libraries, binaries, code, documentation and any other files that
+accompany it (the "SDK"), is the exclusive property of i-Stream Comércio e Serviços On Line Ltda.
+(the "Licensor"), owner of the BioTrust trademark, and is protected by Brazilian copyright and
+software laws (Laws No. 9,609/1998 and No. 9,610/1998) and by international treaties.
+
+1. LICENSE
+
+1.1. Subject to a commercial agreement in force with the Licensor and valid credentials for the
+BioTrust services, the Licensor grants the customer (the "Licensee") a limited, non-exclusive,
+non-transferable, non-sublicensable and revocable license to:
+
+  a) use the SDK solely to integrate the Licensee's own applications with the BioTrust
+     services; and
+  b) distribute the SDK, in binary form and without modification, only as an integral part of
+     those applications, intended for their end users.
+
+1.2. No other right is granted, whether expressly or by implication.
+
+2. RESTRICTIONS
+
+Except with the Licensor's prior written consent, the Licensee may not:
+
+  a) copy the SDK, in whole or in part, beyond what is necessary for the integration set out in
+     section 1;
+  b) modify, adapt, translate or create derivative works of the SDK;
+  c) decompile, disassemble, reverse engineer or otherwise attempt to obtain the source code of
+     the SDK, except to the extent expressly permitted by applicable law;
+  d) distribute, publish, sell, rent, lend, sublicense or otherwise make the SDK available to
+     third parties on a stand-alone basis, as a library, or as part of another SDK, framework or
+     development tool;
+  e) remove or alter any copyright, trademark or license notices;
+  f) use the SDK without valid credentials, circumvent security or licensing mechanisms, or use
+     it to develop a competing product or service.
+
+3. OWNERSHIP
+
+The SDK is licensed, not sold. All rights not expressly granted under this license remain with
+the Licensor.
+
+4. THIRD-PARTY COMPONENTS
+
+The SDK may include third-party components governed by their own licenses, which prevail over
+this one with respect to those components.
+
+5. TERMINATION
+
+This license terminates automatically upon termination of the commercial agreement or upon
+breach of any of its terms. Upon termination, the Licensee must cease all use of the SDK and
+delete every copy in its possession.
+
+6. WARRANTY AND LIABILITY
+
+The SDK is provided as is, without warranties beyond those set out in the commercial agreement.
+To the maximum extent permitted by law, the Licensor shall not be liable for indirect damages,
+loss of profits or loss of data arising from the use of the SDK.
+
+7. GOVERNING LAW AND JURISDICTION
+
+This license is governed by the laws of the Federative Republic of Brazil. The courts of the
+district where the Licensor has its head office shall have exclusive jurisdiction over any
+dispute arising from it.
+
+Contact: cloud@biotrust.io
