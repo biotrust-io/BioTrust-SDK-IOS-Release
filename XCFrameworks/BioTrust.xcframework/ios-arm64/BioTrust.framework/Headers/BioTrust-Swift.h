@@ -312,6 +312,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS_NAMED("BTAccessConfig")
 @interface BTAccessConfig : NSObject
 @property (nonatomic, copy) NSString * _Nonnull apiUrl;
+/// Endereços alternativos, tentados na ordem informada.
+/// Vazio é o caso normal: usa-se apenas o <code>apiUrl</code>. Preenchido, serve à operação local —
+/// a caixa da portaria primeiro, uma segunda caixa depois, a nuvem por último.
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull apiUrls;
 @property (nonatomic, copy) NSString * _Nonnull uuid;
 @property (nonatomic) BOOL useFrontCamera;
 /// Revogar a liberação quando aparecer um rosto sem match antes de a pessoa passar.
@@ -454,6 +458,12 @@ typedef SWIFT_ENUM(NSInteger, BTDocumentType, open) {
 SWIFT_CLASS_NAMED("BTFaceMatchManagerLauncher")
 @interface BTFaceMatchManagerLauncher : NSObject
 - (nonnull instancetype)initWithApiUrl:(NSString * _Nonnull)apiUrl uuid:(NSString * _Nonnull)uuid locale:(NSString * _Nullable)locale themeMode:(NSString * _Nullable)themeMode requireChallenges:(BOOL)requireChallenges OBJC_DESIGNATED_INITIALIZER;
+/// Mesmo cadastro, com endereços alternativos.
+/// Inicializador separado, e não um parâmetro com padrão no de cima: valor padrão do Swift
+/// não existe em Objective-C, então acrescentar <code>apiUrls</code> ao inicializador original trocaria
+/// o seletor <code>initWithApiUrl:uuid:locale:themeMode:requireChallenges:</code> por outro — e os
+/// bindings já publicados, que referenciam o seletor pelo nome, deixariam de encontrá-lo.
+- (nonnull instancetype)initWithApiUrl:(NSString * _Nonnull)apiUrl apiUrls:(NSArray<NSString *> * _Nonnull)apiUrls uuid:(NSString * _Nonnull)uuid locale:(NSString * _Nullable)locale themeMode:(NSString * _Nullable)themeMode requireChallenges:(BOOL)requireChallenges OBJC_DESIGNATED_INITIALIZER;
 /// Cadastra uma pessoa nova: abre a captura e grava o rosto aprovado.
 - (void)addPersonFrom:(UIViewController * _Nonnull)viewController name:(NSString * _Nonnull)name document:(NSString * _Nonnull)document documentType:(enum BTDocumentType)documentType completion:(void (^ _Nonnull)(BTFaceMatchManagerResult * _Nonnull))completion;
 /// Cadastra a partir de uma imagem escolhida, sem abrir a câmera.
@@ -490,6 +500,13 @@ SWIFT_CLASS_NAMED("BTValidationConfig")
 @interface BTValidationConfig : NSObject
 @property (nonatomic, copy) NSString * _Nullable uuid;
 @property (nonatomic, copy) NSString * _Nullable apiUrl;
+/// Endereços alternativos, tentados na ordem informada.
+/// Vazio é o caso normal: usa-se apenas o <code>apiUrl</code>. Preenchido, serve à operação local —
+/// a caixa da portaria primeiro, uma segunda caixa depois, a nuvem por último. O terminal
+/// segue para o próximo quando o anterior não responde.
+/// <code>[String]</code> e não <code>NSArray</code>: um array de String atravessa para Objective-C como
+/// <code>NSArray<NSString *> *</code>, que é o que os bindings leem.
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull apiUrls;
 @property (nonatomic) enum BTValidationMode validationMode;
 @property (nonatomic) NSInteger challengeCount;
 @property (nonatomic) BOOL requireAllChallenges;

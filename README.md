@@ -44,7 +44,7 @@ tempo de execução. Ambos são adicionados ao projeto pelo Swift Package Manage
 
 A referência de uso — modos de validação, parâmetros, resultado, FaceMatch e controle de
 acesso — está em
-[docs.biotrust.io](https://docs.biotrust.io/docs/1.1.0/ios/getting-started).
+[docs.biotrust.io](https://docs.biotrust.io/docs/1.2.0/ios/getting-started).
 
 ## Licença
 

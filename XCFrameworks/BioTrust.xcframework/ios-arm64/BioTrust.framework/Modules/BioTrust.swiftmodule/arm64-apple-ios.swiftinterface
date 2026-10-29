@@ -74,6 +74,7 @@ public class FacialBiometrics : Swift.Codable {
 @_inheritsConvenienceInitializers @objc(BTValidationConfig) public class BTValidationConfig : ObjectiveC.NSObject {
   @objc public var uuid: Swift.String?
   @objc public var apiUrl: Swift.String?
+  @objc public var apiUrls: [Swift.String]
   @objc public var validationMode: BioTrust.BTValidationMode
   @objc public var challengeCount: Swift.Int
   @objc public var requireAllChallenges: Swift.Bool
@@ -136,6 +137,7 @@ public class FacialBiometrics : Swift.Codable {
 }
 @objc(BTFaceMatchManagerLauncher) public class BTFaceMatchManagerLauncher : ObjectiveC.NSObject {
   @objc public init(apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil, requireChallenges: Swift.Bool = false)
+  @objc public init(apiUrl: Swift.String, apiUrls: [Swift.String], uuid: Swift.String, locale: Swift.String?, themeMode: Swift.String?, requireChallenges: Swift.Bool)
   @objc public func addPerson(from viewController: UIKit.UIViewController, name: Swift.String, document: Swift.String, documentType: BioTrust.BTDocumentType, completion: @escaping (BioTrust.BTFaceMatchManagerResult) -> Swift.Void)
   @objc public func addPerson(image: UIKit.UIImage, name: Swift.String, document: Swift.String, documentType: BioTrust.BTDocumentType, completion: @escaping (BioTrust.BTFaceMatchManagerResult) -> Swift.Void)
   @objc public func editPerson(from viewController: UIKit.UIViewController, uniqueId: Swift.String, name: Swift.String, document: Swift.String, completion: @escaping (BioTrust.BTFaceMatchManagerResult) -> Swift.Void)
@@ -147,7 +149,7 @@ public protocol FaceMatchManagerCallback {
   func onCancel()
 }
 @objc public class FaceMatchManagerLauncher : ObjectiveC.NSObject {
-  public init(callback: (any BioTrust.FaceMatchManagerCallback)?, apiUrl: Swift.String, uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil, requireChallenges: Swift.Bool = false)
+  public init(callback: (any BioTrust.FaceMatchManagerCallback)?, apiUrl: Swift.String, apiUrls: [Swift.String] = [], uuid: Swift.String, locale: Swift.String? = nil, themeMode: Swift.String? = nil, requireChallenges: Swift.Bool = false)
   public func addPerson(from viewController: UIKit.UIViewController, name: Swift.String, document: Swift.String, documentType: BioTrust.DocumentType)
   public func editPerson(from viewController: UIKit.UIViewController, uniqueId: Swift.String, name: Swift.String, document: Swift.String)
   public func addPerson(image: UIKit.UIImage, name: Swift.String, document: Swift.String, documentType: BioTrust.DocumentType)
@@ -194,6 +196,7 @@ public struct BTAccessPolicy : Swift.Codable {
 }
 @_inheritsConvenienceInitializers @objc(BTAccessConfig) public class BTAccessConfig : ObjectiveC.NSObject {
   @objc public var apiUrl: Swift.String
+  @objc public var apiUrls: [Swift.String]
   @objc public var uuid: Swift.String
   @objc public var useFrontCamera: Swift.Bool
   @objc public var revokeOnMismatch: Swift.Bool
@@ -467,7 +470,7 @@ public class RegisterResult {
   public var apiUrl: Swift.String
   public var accessToken: Swift.String
   public var session: BioTrust.BioTrustSession?
-  public func BiometricValidation(face: UIKit.UIImage, livenessConfidence: Swift.Float) async throws -> (Swift.Bool, BioTrust.DocumentValidationResult?, BioTrust.FaceMatchResponse?)
+  public func BiometricValidation(face: UIKit.UIImage, livenessConfidence: Swift.Float, quadrosExtras: [UIKit.UIImage] = []) async throws -> (Swift.Bool, BioTrust.DocumentValidationResult?, BioTrust.FaceMatchResponse?)
   @objc deinit
 }
 extension BioTrust.BiometricValidationLauncher.ValidationResultCallback {
@@ -490,6 +493,9 @@ public class BiometricValidationLauncher {
   public var documentInfo: BioTrust.DocumentInfo?
   public var uuid: Swift.String?
   public var apiUrl: Swift.String?
+  public var enderecoDaApi: BioTrust.EnderecoDaApi? {
+    get
+  }
   public var cornerImage: UIKit.UIImage?
   public var cornerImagePosition: BioTrust.BrandPosition
   public init(viewController: UIKit.UIViewController, callback: any BioTrust.BiometricValidationLauncher.ValidationResultCallback, config: BioTrust.FaceBiometricConfig)
@@ -632,6 +638,7 @@ public enum BrandPosition : Swift.String, Swift.CaseIterable {
     public func setTimeout(_ millis: Swift.Int) -> BioTrust.FaceBiometricConfig.Builder
     public func setUuid(_ uuid: Swift.String?) -> BioTrust.FaceBiometricConfig.Builder
     public func setApiUrl(_ apiUrl: Swift.String?) -> BioTrust.FaceBiometricConfig.Builder
+    public func setApiUrls(_ apiUrls: [Swift.String]) -> BioTrust.FaceBiometricConfig.Builder
     public func setValidationMode(_ mode: BioTrust.ValidationMode) -> BioTrust.FaceBiometricConfig.Builder
     public func setDocumentInfo(_ info: BioTrust.DocumentInfo?) -> BioTrust.FaceBiometricConfig.Builder
     public func setLocale(_ locale: Swift.String?) -> BioTrust.FaceBiometricConfig.Builder
@@ -642,6 +649,17 @@ public enum BrandPosition : Swift.String, Swift.CaseIterable {
     public func build() throws -> BioTrust.FaceBiometricConfig
     @objc deinit
   }
+  @objc deinit
+}
+final public class EnderecoDaApi {
+  public init(_ enderecos: [Swift.String])
+  convenience public init(_ endereco: Swift.String?)
+  final public var todos: [Swift.String] {
+    get
+  }
+  final public func preferido() -> Swift.String?
+  final public func resolver() -> Swift.String?
+  final public func marcarFalha()
   @objc deinit
 }
 public class Challenge {

@@ -1671,6 +1671,124 @@
           },
           {
             "kind": "Var",
+            "name": "apiUrls",
+            "printedName": "apiUrls",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BioTrust@objc(cs)BTValidationConfig(py)apiUrls",
+            "mangledName": "$s8BioTrust18BTValidationConfigC7apiUrlsSaySSGvp",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BioTrust@objc(cs)BTValidationConfig(im)apiUrls",
+                "mangledName": "$s8BioTrust18BTValidationConfigC7apiUrlsSaySSGvg",
+                "moduleName": "BioTrust",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BioTrust@objc(cs)BTValidationConfig(im)setApiUrls:",
+                "mangledName": "$s8BioTrust18BTValidationConfigC7apiUrlsSaySSGvs",
+                "moduleName": "BioTrust",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8BioTrust18BTValidationConfigC7apiUrlsSaySSGvM",
+                "mangledName": "$s8BioTrust18BTValidationConfigC7apiUrlsSaySSGvM",
+                "moduleName": "BioTrust",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "validationMode",
             "printedName": "validationMode",
             "children": [
@@ -5264,6 +5382,90 @@
             "init_kind": "Designated"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiUrl:apiUrls:uuid:locale:themeMode:requireChallenges:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BTFaceMatchManagerLauncher",
+                "printedName": "BioTrust.BTFaceMatchManagerLauncher",
+                "usr": "c:@M@BioTrust@objc(cs)BTFaceMatchManagerLauncher"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BioTrust@objc(cs)BTFaceMatchManagerLauncher(im)initWithApiUrl:apiUrls:uuid:locale:themeMode:requireChallenges:",
+            "mangledName": "$s8BioTrust26BTFaceMatchManagerLauncherC6apiUrl0G4Urls4uuid6locale9themeMode17requireChallengesACSS_SaySSGS2SSgAKSbtcfc",
+            "moduleName": "BioTrust",
+            "objc_name": "initWithApiUrl:apiUrls:uuid:locale:themeMode:requireChallenges:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "addPerson",
             "printedName": "addPerson(from:name:document:documentType:completion:)",
@@ -5709,7 +5911,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(callback:apiUrl:uuid:locale:themeMode:requireChallenges:)",
+            "printedName": "init(callback:apiUrl:apiUrls:uuid:locale:themeMode:requireChallenges:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5736,6 +5938,21 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
@@ -5782,8 +5999,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8BioTrust24FaceMatchManagerLauncherC8callback6apiUrl4uuid6locale9themeMode17requireChallengesAcA0cdE8Callback_pSg_S3SSgALSbtcfc",
-            "mangledName": "$s8BioTrust24FaceMatchManagerLauncherC8callback6apiUrl4uuid6locale9themeMode17requireChallengesAcA0cdE8Callback_pSg_S3SSgALSbtcfc",
+            "usr": "s:8BioTrust24FaceMatchManagerLauncherC8callback6apiUrl0H4Urls4uuid6locale9themeMode17requireChallengesAcA0cdE8Callback_pSg_SSSaySSGS2SSgANSbtcfc",
+            "mangledName": "$s8BioTrust24FaceMatchManagerLauncherC8callback6apiUrl0H4Urls4uuid6locale9themeMode17requireChallengesAcA0cdE8Callback_pSg_SSSaySSGS2SSgANSbtcfc",
             "moduleName": "BioTrust",
             "declAttributes": [
               "AccessControl"
@@ -7419,6 +7636,124 @@
                 "declKind": "Accessor",
                 "usr": "s:8BioTrust14BTAccessConfigC6apiUrlSSvM",
                 "mangledName": "$s8BioTrust14BTAccessConfigC6apiUrlSSvM",
+                "moduleName": "BioTrust",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiUrls",
+            "printedName": "apiUrls",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BioTrust@objc(cs)BTAccessConfig(py)apiUrls",
+            "mangledName": "$s8BioTrust14BTAccessConfigC7apiUrlsSaySSGvp",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BioTrust@objc(cs)BTAccessConfig(im)apiUrls",
+                "mangledName": "$s8BioTrust14BTAccessConfigC7apiUrlsSaySSGvg",
+                "moduleName": "BioTrust",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BioTrust@objc(cs)BTAccessConfig(im)setApiUrls:",
+                "mangledName": "$s8BioTrust14BTAccessConfigC7apiUrlsSaySSGvs",
+                "moduleName": "BioTrust",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8BioTrust14BTAccessConfigC7apiUrlsSaySSGvM",
+                "mangledName": "$s8BioTrust14BTAccessConfigC7apiUrlsSaySSGvM",
                 "moduleName": "BioTrust",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -16623,7 +16958,7 @@
           {
             "kind": "Function",
             "name": "BiometricValidation",
-            "printedName": "BiometricValidation(face:livenessConfidence:)",
+            "printedName": "BiometricValidation(face:livenessConfidence:quadrosExtras:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16677,11 +17012,26 @@
                 "name": "Float",
                 "printedName": "Swift.Float",
                 "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIImage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8BioTrust25BiometricValidatorServiceC0C10Validation4face18livenessConfidenceSb_AA08DocumentF6ResultCSgAA17FaceMatchResponseCSgtSo7UIImageC_SftYaKF",
-            "mangledName": "$s8BioTrust25BiometricValidatorServiceC0C10Validation4face18livenessConfidenceSb_AA08DocumentF6ResultCSgAA17FaceMatchResponseCSgtSo7UIImageC_SftYaKF",
+            "usr": "s:8BioTrust25BiometricValidatorServiceC0C10Validation4face18livenessConfidence13quadrosExtrasSb_AA08DocumentF6ResultCSgAA17FaceMatchResponseCSgtSo7UIImageC_SfSayAOGtYaKF",
+            "mangledName": "$s8BioTrust25BiometricValidatorServiceC0C10Validation4face18livenessConfidence13quadrosExtrasSb_AA08DocumentF6ResultCSgAA17FaceMatchResponseCSgtSo7UIImageC_SfSayAOGtYaKF",
             "moduleName": "BioTrust",
             "declAttributes": [
               "AccessControl"
@@ -17771,6 +18121,68 @@
                 "moduleName": "BioTrust",
                 "implicit": true,
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enderecoDaApi",
+            "printedName": "enderecoDaApi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BioTrust.EnderecoDaApi?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EnderecoDaApi",
+                    "printedName": "BioTrust.EnderecoDaApi",
+                    "usr": "s:8BioTrust13EnderecoDaApiC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8BioTrust27BiometricValidationLauncherC13enderecoDaApiAA08EnderecogH0CSgvp",
+            "mangledName": "$s8BioTrust27BiometricValidationLauncherC13enderecoDaApiAA08EnderecogH0CSgvp",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BioTrust.EnderecoDaApi?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EnderecoDaApi",
+                        "printedName": "BioTrust.EnderecoDaApi",
+                        "usr": "s:8BioTrust13EnderecoDaApiC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8BioTrust27BiometricValidationLauncherC13enderecoDaApiAA08EnderecogH0CSgvg",
+                "mangledName": "$s8BioTrust27BiometricValidationLauncherC13enderecoDaApiAA08EnderecogH0CSgvg",
+                "moduleName": "BioTrust",
+                "implicit": true,
+                "accessorKind": "get"
               }
             ]
           },
@@ -22169,6 +22581,42 @@
               },
               {
                 "kind": "Function",
+                "name": "setApiUrls",
+                "printedName": "setApiUrls(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BioTrust.FaceBiometricConfig.Builder",
+                    "usr": "s:8BioTrust19FaceBiometricConfigC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8BioTrust19FaceBiometricConfigC7BuilderC10setApiUrlsyAESaySSGF",
+                "mangledName": "$s8BioTrust19FaceBiometricConfigC7BuilderC10setApiUrlsyAESaySSGF",
+                "moduleName": "BioTrust",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
                 "name": "setValidationMode",
                 "printedName": "setValidationMode(_:)",
                 "children": [
@@ -22446,6 +22894,261 @@
           "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BioTrust"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EnderecoDaApi",
+        "printedName": "EnderecoDaApi",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EnderecoDaApi",
+                "printedName": "BioTrust.EnderecoDaApi",
+                "usr": "s:8BioTrust13EnderecoDaApiC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8BioTrust13EnderecoDaApiCyACSaySSGcfc",
+            "mangledName": "$s8BioTrust13EnderecoDaApiCyACSaySSGcfc",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EnderecoDaApi",
+                "printedName": "BioTrust.EnderecoDaApi",
+                "usr": "s:8BioTrust13EnderecoDaApiC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8BioTrust13EnderecoDaApiCyACSSSgcfc",
+            "mangledName": "$s8BioTrust13EnderecoDaApiCyACSSSgcfc",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Var",
+            "name": "todos",
+            "printedName": "todos",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8BioTrust13EnderecoDaApiC5todosSaySSGvp",
+            "mangledName": "$s8BioTrust13EnderecoDaApiC5todosSaySSGvp",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8BioTrust13EnderecoDaApiC5todosSaySSGvg",
+                "mangledName": "$s8BioTrust13EnderecoDaApiC5todosSaySSGvg",
+                "moduleName": "BioTrust",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "preferido",
+            "printedName": "preferido()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8BioTrust13EnderecoDaApiC9preferidoSSSgyF",
+            "mangledName": "$s8BioTrust13EnderecoDaApiC9preferidoSSSgyF",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resolver",
+            "printedName": "resolver()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8BioTrust13EnderecoDaApiC8resolverSSSgyF",
+            "mangledName": "$s8BioTrust13EnderecoDaApiC8resolverSSSgyF",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "marcarFalha",
+            "printedName": "marcarFalha()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8BioTrust13EnderecoDaApiC11marcarFalhayyF",
+            "mangledName": "$s8BioTrust13EnderecoDaApiC11marcarFalhayyF",
+            "moduleName": "BioTrust",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8BioTrust13EnderecoDaApiC",
+        "mangledName": "$s8BioTrust13EnderecoDaApiC",
+        "moduleName": "BioTrust",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
         "conformances": [
           {
             "kind": "Conformance",
@@ -23097,120 +23800,134 @@
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
+      "kind": "Array",
+      "offset": 2455,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 2038,
+      "offset": 2573,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2090,
+      "offset": 2625,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2224,
+      "offset": 2759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 2532,
+      "offset": 3067,
       "length": 5,
       "value": "30000"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2665,
+      "offset": 3200,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2720,
+      "offset": 3255,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 5651,
+      "offset": 6186,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 5809,
+      "offset": 6344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6102,
+      "offset": 6637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 14127,
+      "offset": 14702,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 14143,
+      "offset": 14718,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 14160,
+      "offset": 14735,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 14873,
+      "offset": 15448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 15615,
+      "offset": 16190,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "BooleanLiteral",
-      "offset": 2381,
+      "offset": 2619,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
+      "kind": "Array",
+      "offset": 2747,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "BooleanLiteral",
-      "offset": 2626,
+      "offset": 2904,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "IntegerLiteral",
-      "offset": 10851,
+      "offset": 11712,
       "length": 2,
       "value": "10"
     },
@@ -23258,108 +23975,143 @@
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "Array",
+      "offset": 2206,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "StringLiteral",
-      "offset": 1945,
+      "offset": 2786,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 1992,
+      "offset": 2833,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 2325,
+      "offset": 3166,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 2648,
+      "offset": 3489,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 2963,
+      "offset": 3804,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 3086,
+      "offset": 3927,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 3222,
+      "offset": 4063,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 3782,
+      "offset": 4623,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 9078,
+      "offset": 9919,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 9411,
+      "offset": 10252,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 9841,
+      "offset": 11008,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11318,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 10436,
+      "offset": 11913,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 18688,
+      "offset": 22236,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 22582,
+      "offset": 26212,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 30773,
+      "offset": 28601,
       "length": 2,
       "value": "12"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37721,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37820,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37956,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/TerminalCredential.swift",
@@ -23395,6 +24147,13 @@
       "offset": 1343,
       "length": 4,
       "value": "0.70"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/AuthService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2837,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
@@ -23833,16 +24592,37 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/BiometricValidatorService.swift",
       "kind": "IntegerLiteral",
-      "offset": 13239,
+      "offset": 778,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/BiometricValidatorService.swift",
+      "kind": "Array",
+      "offset": 1194,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/BiometricValidatorService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14385,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/BiometricValidatorService.swift",
       "kind": "IntegerLiteral",
-      "offset": 13279,
+      "offset": 14425,
       "length": 3,
       "value": "960"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/BiometricValidatorService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14932,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/FingerprintService.swift",
@@ -24679,409 +25459,416 @@
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10071,
-      "length": 3,
-      "value": "120"
-    },
-    {
-      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 10251,
+      "offset": 11030,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10296,
+      "offset": 11075,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10344,
+      "offset": 11123,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 10492,
+      "offset": 11271,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10654,
+      "offset": 11433,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 10710,
+      "offset": 11489,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11217,
+      "offset": 11996,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 11319,
+      "offset": 12098,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11499,
+      "offset": 12278,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "StringLiteral",
-      "offset": 11699,
+      "offset": 12478,
       "length": 14,
       "value": "\"camera.queue\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11837,
+      "offset": 12616,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11882,
+      "offset": 12661,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11933,
+      "offset": 12712,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11980,
+      "offset": 12759,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12059,
+      "offset": 12838,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12097,
+      "offset": 12876,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 12141,
+      "offset": 12920,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Dictionary",
-      "offset": 12248,
+      "offset": 13027,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12281,
+      "offset": 13060,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12324,
+      "offset": 13103,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12368,
+      "offset": 13147,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12412,
+      "offset": 13191,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12452,
+      "offset": 13231,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 12497,
+      "offset": 13276,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12539,
+      "offset": 13318,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12580,
+      "offset": 13359,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 12678,
+      "offset": 13457,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 12753,
+      "offset": 13532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12806,
+      "offset": 13585,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 12852,
+      "offset": 13631,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12896,
+      "offset": 13675,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12948,
+      "offset": 13727,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12997,
+      "offset": 13776,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13044,
+      "offset": 13823,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13240,
+      "offset": 14019,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13289,
+      "offset": 14068,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 13337,
+      "offset": 14116,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13383,
+      "offset": 14162,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 13509,
+      "offset": 14288,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13551,
+      "offset": 14330,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13656,
+      "offset": 14435,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 13834,
+      "offset": 14613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 14977,
+      "offset": 15756,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15061,
+      "offset": 15840,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15110,
+      "offset": 15889,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15234,
+      "offset": 16013,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15289,
+      "offset": 16068,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 15405,
+      "offset": 16184,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 15472,
+      "offset": 16251,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 26552,
+      "offset": 28574,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 27447,
+      "offset": 29469,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 27909,
+      "offset": 29770,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 28285,
+      "offset": 31029,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 30208,
+      "offset": 31405,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 77370,
+      "offset": 33328,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 80742,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 110705,
+      "offset": 114077,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 110745,
+      "offset": 114117,
       "length": 1,
       "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 141587,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/model\/BrandPosition.swift",
@@ -25113,45 +25900,66 @@
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
+      "kind": "Array",
+      "offset": 3101,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2831,
+      "offset": 5200,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2882,
+      "offset": 5251,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2944,
+      "offset": 5313,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2998,
+      "offset": 5367,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3053,
+      "offset": 5422,
       "length": 5,
       "value": "30000"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
+      "kind": "Array",
+      "offset": 5550,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3527,
+      "offset": 5939,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/EnderecoDaApi.swift",
+      "kind": "FloatLiteral",
+      "offset": 1251,
+      "length": 3,
+      "value": "1.5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/model\/Challenge.swift",
