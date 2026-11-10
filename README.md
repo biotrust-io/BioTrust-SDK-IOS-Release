@@ -1,56 +1,57 @@
-# BioTrust para iOS
+# BioTrust for iOS
 
-Validação biométrica facial: prova de vida, validação com documento, FaceMatch e controle de
-acesso. Distribuição binária do SDK iOS BioTrust para Swift Package Manager.
+Facial biometrics: liveness detection, document verification, FaceMatch identification and
+continuous access control. Binary distribution of the BioTrust iOS SDK for Swift Package
+Manager.
 
-## Requisitos
+## Requirements
 
-| Item | Valor |
+| Item | Value |
 | --- | --- |
-| iOS | 15.0 ou superior |
-| Arquitetura | arm64, somente aparelho físico |
-| Xcode | 15 ou superior |
-| Credencial | UUID do cliente, obtido no Dashboard |
+| iOS | 15.0 or newer |
+| Architecture | arm64, physical device only |
+| Xcode | 15 or newer |
+| Credentials | Client UUID, available in the Dashboard |
 
-O pacote não inclui fatia de simulador. A validação depende da câmera do aparelho.
+The package does not include a simulator slice. Validation requires the device camera.
 
-## Instalação
+## Installation
 
-No Xcode, em **File › Add Package Dependencies**, informe:
+In Xcode, under **File › Add Package Dependencies**, enter:
 
 ```
 https://github.com/biotrust-io/BioTrust-SDK-IOS-Release
 ```
 
-Ou no `Package.swift`:
+Or in `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/biotrust-io/BioTrust-SDK-IOS-Release", from: "1.1.0")
+    .package(url: "https://github.com/biotrust-io/BioTrust-SDK-IOS-Release", from: "1.2.1")
 ]
 ```
 
-O produto `BioTrust` entrega dois binários: o SDK e o FingerprintPro, que ele referencia em
-tempo de execução. Ambos são adicionados ao projeto pelo Swift Package Manager.
+The `BioTrust` product delivers two binaries: the SDK and FingerprintPro, which the SDK links
+at runtime. Swift Package Manager adds both to the project.
 
-## Permissões
+## Permissions
 
 ```xml
 <key>NSCameraUsageDescription</key>
-<string>A câmera é utilizada para a validação da sua identidade.</string>
+<string>The camera is used to verify your identity.</string>
 ```
 
-## Documentação
+## Documentation
 
-A referência de uso — modos de validação, parâmetros, resultado, FaceMatch e controle de
-acesso — está em
-[docs.biotrust.io](https://docs.biotrust.io/docs/1.2.0/ios/getting-started).
+The usage reference, covering validation modes, parameters, results, FaceMatch and access
+control, is available at
+[docs.biotrust.io](https://docs.biotrust.io/docs/1.2.1/ios/getting-started).
 
-## Licença
+## License
 
-Software proprietário, licenciado para uso com os serviços BioTrust mediante contrato
-comercial. O texto completo está em
-[docs.biotrust.io/licenca.txt](https://docs.biotrust.io/licenca.txt) e no arquivo `LICENSE`
-deste repositório.
+Proprietary software, licensed for use with the BioTrust services under a commercial
+agreement. The full text is available at
+[docs.biotrust.io/licenca.txt](https://docs.biotrust.io/licenca.txt) and in the `LICENSE` file
+of this repository.
 
-Suporte: cloud@biotrust.io
+Support: cloud@biotrust.io
