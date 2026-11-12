@@ -23738,378 +23738,378 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 402,
+      "offset": 394,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 436,
+      "offset": 428,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 459,
+      "offset": 451,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 487,
+      "offset": 479,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 512,
+      "offset": 504,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 634,
+      "offset": 628,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 659,
+      "offset": 653,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 680,
+      "offset": 674,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 702,
+      "offset": 696,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "Array",
-      "offset": 2455,
+      "offset": 2186,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 2573,
+      "offset": 2304,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2625,
+      "offset": 2356,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2759,
+      "offset": 2462,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 3067,
+      "offset": 2765,
       "length": 5,
       "value": "30000"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 3200,
+      "offset": 2898,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 3255,
+      "offset": 2953,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 6186,
+      "offset": 5673,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6344,
+      "offset": 5831,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6637,
+      "offset": 6124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 14702,
+      "offset": 14108,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 14718,
+      "offset": 14124,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "IntegerLiteral",
-      "offset": 14735,
+      "offset": 14141,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 15448,
+      "offset": 14830,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustObjC.swift",
       "kind": "BooleanLiteral",
-      "offset": 16190,
+      "offset": 15505,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "BooleanLiteral",
-      "offset": 2619,
+      "offset": 1590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "Array",
-      "offset": 2747,
+      "offset": 1718,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "BooleanLiteral",
-      "offset": 2904,
+      "offset": 1875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/FaceMatchManagerLauncher.swift",
       "kind": "IntegerLiteral",
-      "offset": 11712,
+      "offset": 10466,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
+      "offset": 256,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 393,
+      "offset": 344,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 472,
+      "offset": 449,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 560,
+      "offset": 543,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 665,
+      "offset": 638,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1600,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "Array",
-      "offset": 2206,
+      "offset": 1788,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "StringLiteral",
-      "offset": 2786,
+      "offset": 2259,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 2833,
+      "offset": 2306,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 3166,
+      "offset": 2537,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 3489,
+      "offset": 2753,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 3804,
+      "offset": 2963,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 3927,
+      "offset": 3087,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 4063,
+      "offset": 3210,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 4623,
+      "offset": 3558,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 9919,
+      "offset": 8006,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 10252,
+      "offset": 8339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 11008,
+      "offset": 9095,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 11318,
+      "offset": 9405,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 11913,
+      "offset": 10000,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 22236,
+      "offset": 20081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 26212,
+      "offset": 24057,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 28601,
+      "offset": 26446,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 38372,
+      "offset": 36217,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 38471,
+      "offset": 36316,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/AccessControlSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 38607,
+      "offset": 36452,
       "length": 2,
       "value": "16"
     },
@@ -24158,91 +24158,91 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 385,
+      "offset": 354,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7649,
+      "offset": 7537,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7663,
+      "offset": 7551,
       "length": 1,
       "value": "\" v\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7675,
+      "offset": 7563,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7691,
+      "offset": 7579,
       "length": 1,
       "value": "\") - \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7714,
+      "offset": 7602,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8681,
+      "offset": 8569,
       "length": 187,
       "value": "\"Device ID: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8715,
+      "offset": 8603,
       "length": 3,
       "value": "\"\nSDK Version: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8750,
+      "offset": 8638,
       "length": 2,
       "value": "\"\nOS: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8781,
+      "offset": 8669,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8798,
+      "offset": 8686,
       "length": 5,
       "value": "\"\nModel: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8828,
+      "offset": 8716,
       "length": 4,
       "value": "\"\nName: \""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/Services\/DeviceInfoHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8856,
+      "offset": 8744,
       "length": 1276,
       "value": "\"\""
     },
@@ -25264,63 +25264,63 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 350,
+      "offset": 322,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "StringLiteral",
-      "offset": 2060,
+      "offset": 2014,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "StringLiteral",
-      "offset": 2086,
+      "offset": 2040,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "StringLiteral",
-      "offset": 2145,
+      "offset": 2099,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "StringLiteral",
-      "offset": 2176,
+      "offset": 2130,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "StringLiteral",
-      "offset": 4708,
+      "offset": 4657,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "StringLiteral",
-      "offset": 4734,
+      "offset": 4683,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "StringLiteral",
-      "offset": 4793,
+      "offset": 4742,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/BioTrust\/BioTrustManager.swift",
       "kind": "StringLiteral",
-      "offset": 4824,
+      "offset": 4773,
       "length": 2,
       "value": "\"\""
     },
@@ -25355,525 +25355,525 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 4310,
+      "offset": 4286,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 4354,
+      "offset": 4330,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 4442,
+      "offset": 4418,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4554,
+      "offset": 4530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4608,
+      "offset": 4584,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4961,
+      "offset": 4937,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 8345,
+      "offset": 8321,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 8399,
+      "offset": 8375,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8437,
+      "offset": 8413,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 8516,
+      "offset": 8492,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 8556,
+      "offset": 8532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "StringLiteral",
-      "offset": 9413,
+      "offset": 9389,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 9864,
+      "offset": 9840,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 9907,
+      "offset": 9883,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 10019,
+      "offset": 9995,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11030,
+      "offset": 11006,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11911,
+      "offset": 11887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 11957,
+      "offset": 11933,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12005,
+      "offset": 11981,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 12153,
+      "offset": 12129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12315,
+      "offset": 12291,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 12371,
+      "offset": 12347,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 12878,
+      "offset": 12854,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 12980,
+      "offset": 12956,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 13160,
+      "offset": 13136,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "StringLiteral",
-      "offset": 13360,
+      "offset": 13336,
       "length": 14,
       "value": "\"camera.queue\""
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13498,
+      "offset": 13474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13543,
+      "offset": 13519,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13594,
+      "offset": 13570,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13641,
+      "offset": 13617,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13720,
+      "offset": 13696,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13758,
+      "offset": 13734,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 13802,
+      "offset": 13778,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Dictionary",
-      "offset": 13909,
+      "offset": 13885,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13942,
+      "offset": 13918,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13985,
+      "offset": 13961,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14029,
+      "offset": 14005,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14073,
+      "offset": 14049,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14113,
+      "offset": 14089,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14158,
+      "offset": 14134,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14200,
+      "offset": 14176,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14241,
+      "offset": 14217,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 14339,
+      "offset": 14315,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14414,
+      "offset": 14390,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14467,
+      "offset": 14443,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 14513,
+      "offset": 14489,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14557,
+      "offset": 14533,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14609,
+      "offset": 14585,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14658,
+      "offset": 14634,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14705,
+      "offset": 14681,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14901,
+      "offset": 14877,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14950,
+      "offset": 14926,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 14998,
+      "offset": 14974,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15044,
+      "offset": 15020,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 15170,
+      "offset": 15146,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15212,
+      "offset": 15188,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15317,
+      "offset": 15293,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 15495,
+      "offset": 15471,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 16638,
+      "offset": 16614,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 16722,
+      "offset": 16698,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 16771,
+      "offset": 16747,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 16895,
+      "offset": 16871,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 16950,
+      "offset": 16926,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 17066,
+      "offset": 17042,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 17133,
+      "offset": 17109,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "FloatLiteral",
-      "offset": 29456,
+      "offset": 29432,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 30351,
+      "offset": 30327,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 30652,
+      "offset": 30628,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 31911,
+      "offset": 31887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 32287,
+      "offset": 32263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 34210,
+      "offset": 34186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 82668,
+      "offset": 82644,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "Array",
-      "offset": 116003,
+      "offset": 115979,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "IntegerLiteral",
-      "offset": 116043,
+      "offset": 116019,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricValidator.swift",
       "kind": "BooleanLiteral",
-      "offset": 144039,
+      "offset": 144015,
       "length": 5,
       "value": "false"
     },
@@ -25908,56 +25908,56 @@
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "Array",
-      "offset": 3101,
+      "offset": 2778,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5200,
+      "offset": 4877,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5251,
+      "offset": 4928,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5313,
+      "offset": 4990,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5367,
+      "offset": 5044,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5422,
+      "offset": 5099,
       "length": 5,
       "value": "30000"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "Array",
-      "offset": 5550,
+      "offset": 5227,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Production\/Development\/BioTrust\/SDKs\/BiometricFaceValidation-SDK\/BiometricFaceValidator\/FaceBiometricConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5939,
+      "offset": 5616,
       "length": 5,
       "value": "false"
     },
